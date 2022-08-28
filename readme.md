@@ -1,4 +1,4 @@
-# Meu programinhas da faculdade
+# Meus programinhas da faculdade
 
 Neste repositório, colocarei todos os programinhas que fiz na faculdade.
 
