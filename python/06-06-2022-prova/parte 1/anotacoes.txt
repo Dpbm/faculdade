@@ -1,0 +1,6 @@
+1 - anos
+2 - input
+3 - elif
+4 - print
+5 - int 
+6 - and

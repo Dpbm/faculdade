@@ -1,0 +1,1567 @@
+{
+    "targets": [{
+        "isStage": true,
+        "name": "Stage",
+        "variables": {
+            "`jEk@4|i[#Fk?(8x)AV.-my variable": ["my variable", 0]
+        },
+        "lists": {},
+        "broadcasts": {
+            "gEVUd]^u7[T^rJ*_Iy71": "message1"
+        },
+        "blocks": {},
+        "comments": {},
+        "currentCostume": 0,
+        "costumes": [{
+            "assetId": "cd21514d0531fdffb22204e0ec5ed84a",
+            "name": "backdrop1",
+            "md5ext": "cd21514d0531fdffb22204e0ec5ed84a.svg",
+            "dataFormat": "svg",
+            "rotationCenterX": 240,
+            "rotationCenterY": 180
+        }],
+        "sounds": [{
+            "assetId": "83a9787d4cb6f3b7632b4ddfebf74367",
+            "name": "pop",
+            "dataFormat": "wav",
+            "format": "",
+            "rate": 48000,
+            "sampleCount": 1123,
+            "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav"
+        }],
+        "volume": 100,
+        "layerOrder": 0,
+        "tempo": 60,
+        "videoTransparency": 50,
+        "videoState": "on",
+        "textToSpeechLanguage": null
+    }, {
+        "isStage": false,
+        "name": "Sprite1",
+        "variables": {},
+        "lists": {},
+        "broadcasts": {},
+        "blocks": {
+            "lMM$Ali=tm9cm/VfFCsO": {
+                "opcode": "motion_movesteps",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "STEPS": [1, [4, "10"]]
+                },
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 434,
+                "y": 172
+            },
+            "2mHw7aM~Ddo#~tUbG@so": {
+                "opcode": "motion_turnright",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "DEGREES": [1, [4, "15"]]
+                },
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 233,
+                "y": 356
+            },
+            "Re$8h=PlD/XD{bi];f/4": {
+                "opcode": "motion_turnleft",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "DEGREES": [1, [4, "15"]]
+                },
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 160,
+                "y": 179
+            },
+            "4p+ys7(5?hgN{{ch17~$": {
+                "opcode": "motion_goto",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "TO": [1, "u*jB~*uUMEZa8?tj!?vU"]
+                },
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 311,
+                "y": 73
+            },
+            "u*jB~*uUMEZa8?tj!?vU": {
+                "opcode": "motion_goto_menu",
+                "next": null,
+                "parent": "4p+ys7(5?hgN{{ch17~$",
+                "inputs": {},
+                "fields": {
+                    "TO": ["_random_", null]
+                },
+                "shadow": true,
+                "topLevel": false
+            },
+            "igh*BnK+gZeo4F/+#rxf": {
+                "opcode": "motion_gotoxy",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "X": [1, [4, "20"]],
+                    "Y": [1, [4, "0"]]
+                },
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 559,
+                "y": 299
+            },
+            "r5*@Z6-w{C`VDD@,b[xu": {
+                "opcode": "motion_glideto",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "SECS": [1, [4, "1"]],
+                    "TO": [1, "J{jVq[9_ywnn[*FCO6^p"]
+                },
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 465,
+                "y": 480
+            },
+            "J{jVq[9_ywnn[*FCO6^p": {
+                "opcode": "motion_glideto_menu",
+                "next": null,
+                "parent": "r5*@Z6-w{C`VDD@,b[xu",
+                "inputs": {},
+                "fields": {
+                    "TO": ["_random_", null]
+                },
+                "shadow": true,
+                "topLevel": false
+            },
+            "v{xN]}0h?DZ![myG_R:*": {
+                "opcode": "motion_glidesecstoxy",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "SECS": [1, [4, "1"]],
+                    "X": [1, [4, "20"]],
+                    "Y": [1, [4, "0"]]
+                },
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 147,
+                "y": 543
+            },
+            "!WeIbBxM3$qv*[6;B_LE": {
+                "opcode": "motion_pointindirection",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "DIRECTION": [1, [8, "90"]]
+                },
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 48,
+                "y": 425
+            },
+            "ys6LuUF%7?CaUE@),#=2": {
+                "opcode": "motion_pointtowards",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "TOWARDS": [1, "8_vX2ksjjF;(MA]6J37M"]
+                },
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 61,
+                "y": 644
+            },
+            "8_vX2ksjjF;(MA]6J37M": {
+                "opcode": "motion_pointtowards_menu",
+                "next": null,
+                "parent": "ys6LuUF%7?CaUE@),#=2",
+                "inputs": {},
+                "fields": {
+                    "TOWARDS": ["_mouse_", null]
+                },
+                "shadow": true,
+                "topLevel": false
+            },
+            "On(ymWPi+}/cT/R3Wx/j": {
+                "opcode": "motion_changexby",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "DX": [1, [4, "10"]]
+                },
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 508,
+                "y": 628
+            },
+            "_=,A7!o/bIfO[vQ{14p?": {
+                "opcode": "motion_setx",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "X": [1, [4, "20"]]
+                },
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 58,
+                "y": 259
+            },
+            "MLn==vU-V.VT5j_/RJvw": {
+                "opcode": "motion_changeyby",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "DY": [1, [4, "10"]]
+                },
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 53,
+                "y": 87
+            },
+            "#+5rE@x:v19_.9sOWAL^": {
+                "opcode": "motion_sety",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "Y": [1, [4, "0"]]
+                },
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 218,
+                "y": 11
+            },
+            "Ylcyzv8WlQi;V:tD6i?G": {
+                "opcode": "motion_ifonedgebounce",
+                "next": null,
+                "parent": null,
+                "inputs": {},
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 648,
+                "y": 100
+            },
+            "p?8AT7o8+pr}dMG:oZ75": {
+                "opcode": "motion_setrotationstyle",
+                "next": null,
+                "parent": null,
+                "inputs": {},
+                "fields": {
+                    "STYLE": ["left-right", null]
+                },
+                "shadow": false,
+                "topLevel": true,
+                "x": 323,
+                "y": 274
+            },
+            ")etG1X3lVM=l!lqsObQZ": {
+                "opcode": "motion_xposition",
+                "next": null,
+                "parent": null,
+                "inputs": {},
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 333,
+                "y": 444
+            },
+            "Tdu6}r;{l*i(7;4_mgcM": {
+                "opcode": "motion_yposition",
+                "next": null,
+                "parent": null,
+                "inputs": {},
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 538,
+                "y": 384
+            },
+            "xs%A!cPpxEwS!^-FSX(F": {
+                "opcode": "motion_direction",
+                "next": null,
+                "parent": null,
+                "inputs": {},
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 28,
+                "y": 341
+            },
+            "Qm_:ufmK#nO*6kpA-}km": {
+                "opcode": "looks_sayforsecs",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "MESSAGE": [1, [10, "Hello!"]],
+                    "SECS": [1, [4, "2"]]
+                },
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 354,
+                "y": 855
+            },
+            ":R7!tyM0z58%*e`ck2qD": {
+                "opcode": "looks_say",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "MESSAGE": [1, [10, "Hello!"]]
+                },
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 291,
+                "y": 980
+            },
+            ",#6E2Muo)_W-#JXjjn5/": {
+                "opcode": "looks_thinkforsecs",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "MESSAGE": [1, [10, "Hmm..."]],
+                    "SECS": [1, [4, "2"]]
+                },
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 580,
+                "y": 1033
+            },
+            "r9Pm~n,SbMMVH[[X!4yI": {
+                "opcode": "looks_think",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "MESSAGE": [1, [10, "Hmm..."]]
+                },
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 278,
+                "y": 1146
+            },
+            "E3E0LOELc_@1z!:NUM(o": {
+                "opcode": "looks_switchcostumeto",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "COSTUME": [1, "*cuYF0Mh^0f@=,zRe)So"]
+                },
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 870,
+                "y": 721
+            },
+            "*cuYF0Mh^0f@=,zRe)So": {
+                "opcode": "looks_costume",
+                "next": null,
+                "parent": "E3E0LOELc_@1z!:NUM(o",
+                "inputs": {},
+                "fields": {
+                    "COSTUME": ["costume2", null]
+                },
+                "shadow": true,
+                "topLevel": false
+            },
+            ":V`2QUZiE_zN,{YXaHsi": {
+                "opcode": "looks_nextcostume",
+                "next": null,
+                "parent": null,
+                "inputs": {},
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 982,
+                "y": 833
+            },
+            "ai8{ZbY.Pht}Jn-JNuxv": {
+                "opcode": "looks_switchbackdropto",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "BACKDROP": [1, "UhaC,]xEj4}uYC~NKG+1"]
+                },
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 952,
+                "y": 452
+            },
+            "UhaC,]xEj4}uYC~NKG+1": {
+                "opcode": "looks_backdrops",
+                "next": null,
+                "parent": "ai8{ZbY.Pht}Jn-JNuxv",
+                "inputs": {},
+                "fields": {
+                    "BACKDROP": ["backdrop1", null]
+                },
+                "shadow": true,
+                "topLevel": false
+            },
+            "Cd#%q5QX).OoOqYKnSR+": {
+                "opcode": "looks_nextbackdrop",
+                "next": null,
+                "parent": null,
+                "inputs": {},
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 970,
+                "y": 577
+            },
+            "M`nU-LUDT:5~30Y+T`hF": {
+                "opcode": "looks_changesizeby",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "CHANGE": [1, [4, "10"]]
+                },
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 1133,
+                "y": 582
+            },
+            "BKK}7.z@un3B8?Yu+`0h": {
+                "opcode": "looks_setsizeto",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "SIZE": [1, [4, "100"]]
+                },
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 1203,
+                "y": 853
+            },
+            "!Pu#WClv6LA[GeTfgHZ7": {
+                "opcode": "looks_changeeffectby",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "CHANGE": [1, [4, "25"]]
+                },
+                "fields": {
+                    "EFFECT": ["COLOR", null]
+                },
+                "shadow": false,
+                "topLevel": true,
+                "x": 923,
+                "y": 943
+            },
+            "dsIN$es6L*J(c{^)AXus": {
+                "opcode": "looks_seteffectto",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "VALUE": [1, [4, "0"]]
+                },
+                "fields": {
+                    "EFFECT": ["COLOR", null]
+                },
+                "shadow": false,
+                "topLevel": true,
+                "x": 929,
+                "y": 1045
+            },
+            "xxN(q]Qq_#2h~RawCjYG": {
+                "opcode": "looks_cleargraphiceffects",
+                "next": null,
+                "parent": null,
+                "inputs": {},
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 1062,
+                "y": 180
+            },
+            "$q-a@snumpntB)nF_#}f": {
+                "opcode": "looks_show",
+                "next": null,
+                "parent": null,
+                "inputs": {},
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 716,
+                "y": 728
+            },
+            "x/Zk4cGnfuL%`jx[3OV)": {
+                "opcode": "looks_hide",
+                "next": null,
+                "parent": null,
+                "inputs": {},
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 196,
+                "y": 817
+            },
+            "UD|$7}1!%zugbOxBpdJt": {
+                "opcode": "looks_gotofrontback",
+                "next": null,
+                "parent": null,
+                "inputs": {},
+                "fields": {
+                    "FRONT_BACK": ["front", null]
+                },
+                "shadow": false,
+                "topLevel": true,
+                "x": 56,
+                "y": 930
+            },
+            "Q^3~6?wqP_`,FN60H[L8": {
+                "opcode": "looks_goforwardbackwardlayers",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "NUM": [1, [7, "1"]]
+                },
+                "fields": {
+                    "FORWARD_BACKWARD": ["forward", null]
+                },
+                "shadow": false,
+                "topLevel": true,
+                "x": 89,
+                "y": 1058
+            },
+            "[khO?~5j!zI1yW/Zij.!": {
+                "opcode": "looks_costumenumbername",
+                "next": null,
+                "parent": null,
+                "inputs": {},
+                "fields": {
+                    "NUMBER_NAME": ["number", null]
+                },
+                "shadow": false,
+                "topLevel": true,
+                "x": 662,
+                "y": 1127
+            },
+            "@hoFCMM^V=r[mq5{}t/A": {
+                "opcode": "looks_backdropnumbername",
+                "next": null,
+                "parent": null,
+                "inputs": {},
+                "fields": {
+                    "NUMBER_NAME": ["number", null]
+                },
+                "shadow": false,
+                "topLevel": true,
+                "x": 483,
+                "y": 1165
+            },
+            "SX]O.)A%#7lhN01^0*wT": {
+                "opcode": "looks_size",
+                "next": null,
+                "parent": null,
+                "inputs": {},
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 908,
+                "y": 1155
+            },
+            "--}K1Ljj^,zsd!?ROrT*": {
+                "opcode": "sound_playuntildone",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "SOUND_MENU": [1, "!cK,.QlADa9i_E64R+`@"]
+                },
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 614,
+                "y": 1434
+            },
+            "!cK,.QlADa9i_E64R+`@": {
+                "opcode": "sound_sounds_menu",
+                "next": null,
+                "parent": "--}K1Ljj^,zsd!?ROrT*",
+                "inputs": {},
+                "fields": {
+                    "SOUND_MENU": ["Meow", null]
+                },
+                "shadow": true,
+                "topLevel": false
+            },
+            "g9XZbs!XLs9X8hQs|jzB": {
+                "opcode": "sound_play",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "SOUND_MENU": [1, "yw{nS4DD.I7I.u6^[FyK"]
+                },
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 373,
+                "y": 1347
+            },
+            "yw{nS4DD.I7I.u6^[FyK": {
+                "opcode": "sound_sounds_menu",
+                "next": null,
+                "parent": "g9XZbs!XLs9X8hQs|jzB",
+                "inputs": {},
+                "fields": {
+                    "SOUND_MENU": ["Meow", null]
+                },
+                "shadow": true,
+                "topLevel": false
+            },
+            ".0X7`uHAblfec{9xG2^2": {
+                "opcode": "sound_stopallsounds",
+                "next": null,
+                "parent": null,
+                "inputs": {},
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 1108,
+                "y": 1308
+            },
+            "XAO]*{`*K[M4vG*!h_dw": {
+                "opcode": "sound_changeeffectby",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "VALUE": [1, [4, "10"]]
+                },
+                "fields": {
+                    "EFFECT": ["PITCH", null]
+                },
+                "shadow": false,
+                "topLevel": true,
+                "x": 767,
+                "y": 1275
+            },
+            "YxD%(]7J}{Uk4Vn${mss": {
+                "opcode": "sound_seteffectto",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "VALUE": [1, [4, "100"]]
+                },
+                "fields": {
+                    "EFFECT": ["PITCH", null]
+                },
+                "shadow": false,
+                "topLevel": true,
+                "x": 191,
+                "y": 1500
+            },
+            "$gA_:]XJcQhCJU$k,Ov]": {
+                "opcode": "sound_cleareffects",
+                "next": null,
+                "parent": null,
+                "inputs": {},
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 35,
+                "y": 1351
+            },
+            "HizNO#HWFSOCxiRP@Cx4": {
+                "opcode": "sound_changevolumeby",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "VOLUME": [1, [4, "-10"]]
+                },
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 127,
+                "y": 1290
+            },
+            "hIZ%HBTH;7F66/(SK_8b": {
+                "opcode": "sound_setvolumeto",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "VOLUME": [1, [4, "100"]]
+                },
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 470,
+                "y": 1247
+            },
+            "P:6PxW4jg2q#n+?yPWj2": {
+                "opcode": "sound_volume",
+                "next": null,
+                "parent": null,
+                "inputs": {},
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 826,
+                "y": 1610
+            },
+            "!g,MnCsRjs=B#mJMZ5hl": {
+                "opcode": "event_whenflagclicked",
+                "next": null,
+                "parent": null,
+                "inputs": {},
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 678,
+                "y": 1372
+            },
+            "z_S7@?GSM}lE+%)6{L{I": {
+                "opcode": "event_whenkeypressed",
+                "next": null,
+                "parent": null,
+                "inputs": {},
+                "fields": {
+                    "KEY_OPTION": ["space", null]
+                },
+                "shadow": false,
+                "topLevel": true,
+                "x": 1059,
+                "y": 1484
+            },
+            "8a_j@RC^-}hw}lp,OPTX": {
+                "opcode": "event_whenthisspriteclicked",
+                "next": null,
+                "parent": null,
+                "inputs": {},
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 596,
+                "y": 1758
+            },
+            "`)}m:!yQKR`oE%+6p.GX": {
+                "opcode": "event_whenbackdropswitchesto",
+                "next": null,
+                "parent": null,
+                "inputs": {},
+                "fields": {
+                    "BACKDROP": ["backdrop1", null]
+                },
+                "shadow": false,
+                "topLevel": true,
+                "x": 204,
+                "y": 1858
+            },
+            ";]pg+SIgW?p8}z41cHHm": {
+                "opcode": "event_whengreaterthan",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "VALUE": [1, [4, "10"]]
+                },
+                "fields": {
+                    "WHENGREATERTHANMENU": ["LOUDNESS", null]
+                },
+                "shadow": false,
+                "topLevel": true,
+                "x": 808,
+                "y": 1896
+            },
+            "al0x}IQ*s?/XrcKf#{-6": {
+                "opcode": "event_whenbroadcastreceived",
+                "next": null,
+                "parent": null,
+                "inputs": {},
+                "fields": {
+                    "BROADCAST_OPTION": ["message1", "gEVUd]^u7[T^rJ*_Iy71"]
+                },
+                "shadow": false,
+                "topLevel": true,
+                "x": 153,
+                "y": 1688
+            },
+            "`Y^{n0rXIs:Oq)sCdk-5": {
+                "opcode": "event_broadcast",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "BROADCAST_INPUT": [1, [11, "message1", "gEVUd]^u7[T^rJ*_Iy71"]]
+                },
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 550,
+                "y": 1614
+            },
+            ")?]vF=1$hmawnQH_`q5n": {
+                "opcode": "event_broadcastandwait",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "BROADCAST_INPUT": [1, [11, "message1", "gEVUd]^u7[T^rJ*_Iy71"]]
+                },
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 916,
+                "y": 1688
+            },
+            "APT-Y5KFg,U5-bEMjUN[": {
+                "opcode": "control_wait",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "DURATION": [1, [5, "1"]]
+                },
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 652,
+                "y": 1959
+            },
+            "~Fi$rT8sMPw.vqeG4(v+": {
+                "opcode": "control_repeat",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "TIMES": [1, [6, "10"]]
+                },
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 455,
+                "y": 1993
+            },
+            "d_4_=O|3GMocTo8JX@Q[": {
+                "opcode": "control_forever",
+                "next": null,
+                "parent": null,
+                "inputs": {},
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 880,
+                "y": 1997
+            },
+            "sy;L,o[8V~,fZ0Y,SG!i": {
+                "opcode": "control_if",
+                "next": null,
+                "parent": null,
+                "inputs": {},
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 196,
+                "y": 2001
+            },
+            "KvpL;=6mgG.C8hSq?$SN": {
+                "opcode": "control_if_else",
+                "next": null,
+                "parent": null,
+                "inputs": {},
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 1149,
+                "y": 1742
+            },
+            "H)1fv{d9QD_t?5=i8GG2": {
+                "opcode": "control_wait_until",
+                "next": null,
+                "parent": null,
+                "inputs": {},
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 1108,
+                "y": 1984
+            },
+            "_fv}`8xl6beD}j]k$@13": {
+                "opcode": "control_repeat_until",
+                "next": null,
+                "parent": null,
+                "inputs": {},
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 688,
+                "y": 2070
+            },
+            "kse-vGBA{O/`$9oSeK*X": {
+                "opcode": "control_stop",
+                "next": null,
+                "parent": null,
+                "inputs": {},
+                "fields": {
+                    "STOP_OPTION": ["all", null]
+                },
+                "shadow": false,
+                "topLevel": true,
+                "x": 355,
+                "y": 2137,
+                "mutation": {
+                    "tagName": "mutation",
+                    "children": [],
+                    "hasnext": "false"
+                }
+            },
+            "Paw#2@xy-2_#1Qm,|$*5": {
+                "opcode": "control_start_as_clone",
+                "next": null,
+                "parent": null,
+                "inputs": {},
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 1095,
+                "y": 1575
+            },
+            ".8e,IJW],^wdVer}`D|d": {
+                "opcode": "control_create_clone_of",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "CLONE_OPTION": [1, ".dAXM,jRuX|`1QD68Z_|"]
+                },
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 332,
+                "y": 1582
+            },
+            ".dAXM,jRuX|`1QD68Z_|": {
+                "opcode": "control_create_clone_of_menu",
+                "next": null,
+                "parent": ".8e,IJW],^wdVer}`D|d",
+                "inputs": {},
+                "fields": {
+                    "CLONE_OPTION": ["_myself_", null]
+                },
+                "shadow": true,
+                "topLevel": false
+            },
+            "x;JQgD#YGYH]C8y]#~`Z": {
+                "opcode": "control_delete_this_clone",
+                "next": null,
+                "parent": null,
+                "inputs": {},
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 104,
+                "y": 1556
+            },
+            "/w#e8.3swa2LDV~H/!ju": {
+                "opcode": "sensing_touchingobject",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "TOUCHINGOBJECTMENU": [1, "{:;Sq/vjsEl:WE[LWzob"]
+                },
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 532,
+                "y": 2411
+            },
+            "{:;Sq/vjsEl:WE[LWzob": {
+                "opcode": "sensing_touchingobjectmenu",
+                "next": null,
+                "parent": "/w#e8.3swa2LDV~H/!ju",
+                "inputs": {},
+                "fields": {
+                    "TOUCHINGOBJECTMENU": ["_mouse_", null]
+                },
+                "shadow": true,
+                "topLevel": false
+            },
+            "w.PA!6{ZSN2o4yu;%8ca": {
+                "opcode": "sensing_touchingcolor",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "COLOR": [1, [9, "#1d73cb"]]
+                },
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 222,
+                "y": 2281
+            },
+            "+kpWUE_p3,s$7R!iF,)B": {
+                "opcode": "sensing_coloristouchingcolor",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "COLOR": [1, [9, "#af6c60"]],
+                    "COLOR2": [1, [9, "#7b780f"]]
+                },
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 250,
+                "y": 2527
+            },
+            "__NiH|GM5uT,,}r_=Msx": {
+                "opcode": "sensing_distanceto",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "DISTANCETOMENU": [1, "h8EW8*Wv#[My2wx*kc8W"]
+                },
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 900,
+                "y": 2292
+            },
+            "h8EW8*Wv#[My2wx*kc8W": {
+                "opcode": "sensing_distancetomenu",
+                "next": null,
+                "parent": "__NiH|GM5uT,,}r_=Msx",
+                "inputs": {},
+                "fields": {
+                    "DISTANCETOMENU": ["_mouse_", null]
+                },
+                "shadow": true,
+                "topLevel": false
+            },
+            "w;!utAz=ie2f`Pl?l8EP": {
+                "opcode": "sensing_askandwait",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "QUESTION": [1, [10, "What's your name?"]]
+                },
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 550,
+                "y": 2241
+            },
+            "*#%iSKlT6D`%z!g}%W`D": {
+                "opcode": "sensing_answer",
+                "next": null,
+                "parent": null,
+                "inputs": {},
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 987,
+                "y": 2441
+            },
+            "C}f/E-ZfZ6Fv}CFovCZ2": {
+                "opcode": "sensing_keypressed",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "KEY_OPTION": [1, "V7Fi:1FGTQ=pFe1p@@hc"]
+                },
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 765,
+                "y": 2587
+            },
+            "V7Fi:1FGTQ=pFe1p@@hc": {
+                "opcode": "sensing_keyoptions",
+                "next": null,
+                "parent": "C}f/E-ZfZ6Fv}CFovCZ2",
+                "inputs": {},
+                "fields": {
+                    "KEY_OPTION": ["space", null]
+                },
+                "shadow": true,
+                "topLevel": false
+            },
+            "~8=22AaJIW9o[m(D7{jR": {
+                "opcode": "sensing_mousedown",
+                "next": null,
+                "parent": null,
+                "inputs": {},
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 516,
+                "y": 2636
+            },
+            "ShM=E1tE!q;y}lRxTU$V": {
+                "opcode": "sensing_mousex",
+                "next": null,
+                "parent": null,
+                "inputs": {},
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 565,
+                "y": 2498
+            },
+            "YO)/LGI0y9@ah+meV%#u": {
+                "opcode": "sensing_mousey",
+                "next": null,
+                "parent": null,
+                "inputs": {},
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 188,
+                "y": 2454
+            },
+            "AE[F~9@|R1X.#*TkXUm1": {
+                "opcode": "sensing_setdragmode",
+                "next": null,
+                "parent": null,
+                "inputs": {},
+                "fields": {
+                    "DRAG_MODE": ["draggable", null]
+                },
+                "shadow": false,
+                "topLevel": true,
+                "x": 278,
+                "y": 2422
+            },
+            "_^1)Y=5ZGmYEJ!~R=hAO": {
+                "opcode": "sensing_loudness",
+                "next": null,
+                "parent": null,
+                "inputs": {},
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 1128,
+                "y": 2469
+            },
+            "!Jg[fdC;Z$%cJg2R%|$Q": {
+                "opcode": "sensing_timer",
+                "next": null,
+                "parent": null,
+                "inputs": {},
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 278,
+                "y": 2610
+            },
+            "RgkLq%8-R}EHW*Sex#6P": {
+                "opcode": "sensing_resettimer",
+                "next": null,
+                "parent": null,
+                "inputs": {},
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 1220,
+                "y": 2301
+            },
+            "CLpOY3VA=56kL^VM_Nz1": {
+                "opcode": "sensing_of",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "OBJECT": [1, "]0t=9=yPkirUj3SY?Qij"]
+                },
+                "fields": {
+                    "PROPERTY": ["backdrop #", null]
+                },
+                "shadow": false,
+                "topLevel": true,
+                "x": 1003,
+                "y": 2186
+            },
+            "]0t=9=yPkirUj3SY?Qij": {
+                "opcode": "sensing_of_object_menu",
+                "next": null,
+                "parent": "CLpOY3VA=56kL^VM_Nz1",
+                "inputs": {},
+                "fields": {
+                    "OBJECT": ["_stage_", null]
+                },
+                "shadow": true,
+                "topLevel": false
+            },
+            "5#L;qnfQS(uDItBEPQGG": {
+                "opcode": "sensing_current",
+                "next": null,
+                "parent": null,
+                "inputs": {},
+                "fields": {
+                    "CURRENTMENU": ["YEAR", null]
+                },
+                "shadow": false,
+                "topLevel": true,
+                "x": 716,
+                "y": 2340
+            },
+            "MvCu@.#;PQ^pn*:mr-U@": {
+                "opcode": "sensing_dayssince2000",
+                "next": null,
+                "parent": null,
+                "inputs": {},
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 667,
+                "y": 2550
+            },
+            "WZqL,KN@=K?%-(0_F$0S": {
+                "opcode": "operator_add",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "NUM1": [1, [4, ""]],
+                    "NUM2": [1, [4, ""]]
+                },
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 726,
+                "y": 2680
+            },
+            "Q(zsx+~P0?TuE,Q,zg*0": {
+                "opcode": "operator_subtract",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "NUM1": [1, [4, ""]],
+                    "NUM2": [1, [4, ""]]
+                },
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 283,
+                "y": 2709
+            },
+            "tuTiQjO3XZBQ$JLlb;R9": {
+                "opcode": "operator_multiply",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "NUM1": [1, [4, ""]],
+                    "NUM2": [1, [4, ""]]
+                },
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 112,
+                "y": 2601
+            },
+            "9h3.aD1gG/zN6W_=a^6~": {
+                "opcode": "operator_divide",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "NUM1": [1, [4, ""]],
+                    "NUM2": [1, [4, ""]]
+                },
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 353,
+                "y": 2617
+            },
+            "mJD^a0{F}}jMI%}]aSaJ": {
+                "opcode": "operator_random",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "FROM": [1, [4, "1"]],
+                    "TO": [1, [4, "10"]]
+                },
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 486,
+                "y": 2697
+            },
+            "JmaQgrwm{fFQ6^CUihQQ": {
+                "opcode": "operator_gt",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "OPERAND1": [1, [10, ""]],
+                    "OPERAND2": [1, [10, "50"]]
+                },
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 926,
+                "y": 2662
+            },
+            "C?y1i:j1Qff!)O0={tQ?": {
+                "opcode": "operator_lt",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "OPERAND1": [1, [10, ""]],
+                    "OPERAND2": [1, [10, "50"]]
+                },
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 1115,
+                "y": 2555
+            },
+            "FzPJaC[{DB{v1OZ(v6A`": {
+                "opcode": "operator_equals",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "OPERAND1": [1, [10, ""]],
+                    "OPERAND2": [1, [10, "50"]]
+                },
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 849,
+                "y": 2496
+            },
+            "qsXiEG@iPd9KJ)0,D-Cj": {
+                "opcode": "operator_and",
+                "next": null,
+                "parent": null,
+                "inputs": {},
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 468,
+                "y": 2336
+            },
+            "Y-/6ilhXAuWiyc1L`1uk": {
+                "opcode": "operator_or",
+                "next": null,
+                "parent": null,
+                "inputs": {},
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 155,
+                "y": 2177
+            },
+            "-cF-%~JaKLKd%}t#2]mA": {
+                "opcode": "operator_not",
+                "next": null,
+                "parent": null,
+                "inputs": {},
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 33,
+                "y": 2142
+            },
+            "0Rs6P|#q;Y1Lzn#`d+Od": {
+                "opcode": "operator_join",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "STRING1": [1, [10, "apple "]],
+                    "STRING2": [1, [10, "banana"]]
+                },
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 53,
+                "y": 2316
+            },
+            "wGe[MC`js#{OfY9383{B": {
+                "opcode": "operator_letter_of",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "LETTER": [1, [6, "1"]],
+                    "STRING": [1, [10, "apple"]]
+                },
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 15,
+                "y": 2406
+            },
+            "hpL$^#?2MzIAc1LoM(7w": {
+                "opcode": "operator_length",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "STRING": [1, [10, "apple"]]
+                },
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 74,
+                "y": 2527
+            },
+            "Mb_H+DCP-r+,tQXB-2XH": {
+                "opcode": "operator_contains",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "STRING1": [1, [10, "apple"]],
+                    "STRING2": [1, [10, "a"]]
+                },
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": -37,
+                "y": 1844
+            },
+            "gZB)RD!JZ$I9oP7HFy4A": {
+                "opcode": "operator_mod",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "NUM1": [1, [4, ""]],
+                    "NUM2": [1, [4, ""]]
+                },
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 634,
+                "y": 1872
+            },
+            "E~O[U,EHdemDj6C^%!!T": {
+                "opcode": "operator_round",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "NUM": [1, [4, ""]]
+                },
+                "fields": {},
+                "shadow": false,
+                "topLevel": true,
+                "x": 816,
+                "y": 1768
+            },
+            "|laFP6Ci]%QA=ese|5wF": {
+                "opcode": "operator_mathop",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "NUM": [1, [4, ""]]
+                },
+                "fields": {
+                    "OPERATOR": ["abs", null]
+                },
+                "shadow": false,
+                "topLevel": true,
+                "x": 929,
+                "y": 1817
+            },
+            "s[=eHEYz$Zc$NWh%0I-L": [12, "my variable", "`jEk@4|i[#Fk?(8x)AV.-my variable", 1123, 2074],
+            "F(f`fT4w4No@|i:jC9Sk": {
+                "opcode": "data_setvariableto",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "VALUE": [1, [10, "0"]]
+                },
+                "fields": {
+                    "VARIABLE": ["my variable", "`jEk@4|i[#Fk?(8x)AV.-my variable"]
+                },
+                "shadow": false,
+                "topLevel": true,
+                "x": 1087,
+                "y": 2124
+            },
+            "q[p|IlB6X3~9K_3Tk-EN": {
+                "opcode": "data_changevariableby",
+                "next": null,
+                "parent": null,
+                "inputs": {
+                    "VALUE": [1, [4, "1"]]
+                },
+                "fields": {
+                    "VARIABLE": ["my variable", "`jEk@4|i[#Fk?(8x)AV.-my variable"]
+                },
+                "shadow": false,
+                "topLevel": true,
+                "x": 442,
+                "y": 2155
+            },
+            "rWS|?sI`FS9~,|M/#`dY": {
+                "opcode": "data_showvariable",
+                "next": null,
+                "parent": null,
+                "inputs": {},
+                "fields": {
+                    "VARIABLE": ["my variable", "`jEk@4|i[#Fk?(8x)AV.-my variable"]
+                },
+                "shadow": false,
+                "topLevel": true,
+                "x": 706,
+                "y": 2278
+            },
+            "xX7mm.7X:}`lQW_ie+b|": {
+                "opcode": "data_hidevariable",
+                "next": null,
+                "parent": null,
+                "inputs": {},
+                "fields": {
+                    "VARIABLE": ["my variable", "`jEk@4|i[#Fk?(8x)AV.-my variable"]
+                },
+                "shadow": false,
+                "topLevel": true,
+                "x": 821,
+                "y": 2368
+            }
+        },
+        "comments": {},
+        "currentCostume": 0,
+        "costumes": [{
+            "assetId": "bcf454acf82e4504149f7ffe07081dbc",
+            "name": "costume1",
+            "bitmapResolution": 1,
+            "md5ext": "bcf454acf82e4504149f7ffe07081dbc.svg",
+            "dataFormat": "svg",
+            "rotationCenterX": 48,
+            "rotationCenterY": 50
+        }, {
+            "assetId": "0fb9be3e8397c983338cb71dc84d0b25",
+            "name": "costume2",
+            "bitmapResolution": 1,
+            "md5ext": "0fb9be3e8397c983338cb71dc84d0b25.svg",
+            "dataFormat": "svg",
+            "rotationCenterX": 46,
+            "rotationCenterY": 53
+        }],
+        "sounds": [{
+            "assetId": "83c36d806dc92327b9e7049a565c6bff",
+            "name": "Meow",
+            "dataFormat": "wav",
+            "format": "",
+            "rate": 48000,
+            "sampleCount": 40681,
+            "md5ext": "83c36d806dc92327b9e7049a565c6bff.wav"
+        }],
+        "volume": 100,
+        "layerOrder": 1,
+        "visible": true,
+        "x": 20,
+        "y": 0,
+        "size": 100,
+        "direction": 90,
+        "draggable": false,
+        "rotationStyle": "all around"
+    }],
+    "monitors": [],
+    "extensions": [],
+    "meta": {
+        "semver": "3.0.0",
+        "vm": "0.2.0-prerelease.20220501145413",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36"
+    }
+}

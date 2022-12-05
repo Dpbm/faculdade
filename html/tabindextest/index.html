@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing tabindex</title>
+
+    <style>
+        
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+
+        .main-data{
+            height: 100vh;
+            width: 100vw;
+            
+            background-color: #9BA3EB;
+        
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+
+        .name-text-data{
+            font-size: 20px;
+            border-radius: 10px;
+            padding: 10px;
+            outline: 0;
+            border: none;
+            width: 400px;
+            
+            color: #646FD4;
+        }
+
+        .name-text-data::placeholder{
+            color: #9BA3EB;
+        }
+
+        .name-enter-button{
+            margin: 10px;
+            font-size: 20px;
+            border-radius: 10px;
+            padding: 10px;
+            outline: 0;
+            border: none;
+
+            width: 400px;
+            color: #646FD4;
+
+        }
+
+        .name-enter-button:hover{
+            cursor: pointer;
+            opacity: 0.7;
+        }
+
+
+    </style>
+</head>
+<body>
+    <main class="main-data" id="mainData" role="main">
+        <input class="name-text-data" id="nameTextData" tabindex="0" name="username" placeholder="Your name" role="textbox"   />
+        <button class="name-enter-button" id="buttonSendData" tabindex="-1">Enter</button>
+    </main>
+
+    <script type="text/javascript">
+        const KEYCODE = {
+            LEFT: 37,
+            RIGHT: 39,
+            TAB: 9,
+            ENTER: 13
+        };
+        
+        let name = null;
+
+        const mainElement = document.getElementById("mainData");
+        const actionButton = document.getElementById("buttonSendData");
+        const inputText = document.getElementById("nameTextData");
+        
+        function tabIndex(){
+            const item = document.activeElement;
+            
+            if(item.nextElementSibling){
+                item.nextElementSibling.tabIndex = 0;
+                item.nextElementSibling.focus();
+                
+                item.tabIndex = -1;
+                return;
+            
+            }
+
+            item.previousElementSibling.tabIndex = 0;
+            item.previousElementSibling.focus();
+                
+            item.tabIndex = -1;
+        }
+
+        function nextElement(){
+            const item = document.activeElement;
+            
+            if(item.nextElementSibling){
+                item.nextElementSibling.tabIndex = 0;
+                item.nextElementSibling.focus();
+                
+                item.tabIndex = -1;
+                return;
+            
+            }
+        }
+
+        function previousElement(){
+            const item = document.activeElement;
+
+            if(item.previousElementSibling){
+                item.previousElementSibling.tabIndex = 0;
+                item.previousElementSibling.focus();
+                    
+                item.tabIndex = -1;
+                return;
+            
+            }
+
+            
+        }
+
+        mainElement.addEventListener("keydown", (event) => {
+            const keyPressed = event.keyCode;
+            
+            if(!Object.values(KEYCODE).includes(keyPressed)) return;
+
+            switch(keyPressed){
+                case KEYCODE.RIGHT:
+                    nextElement();
+                    break;
+
+                case KEYCODE.LEFT:
+                    previousElement();
+                    break;
+
+                default:
+                    tabIndex();
+                    break;    
+            }
+        }, {passive: true});
+        
+        actionButton.addEventListener("keydown", (event) => {
+            event.preventDefault();
+
+            if(event.keyCode !== KEYCODE.ENTER || !name) return;
+            
+            alert(`Olá ${name}!`);
+        });
+
+        actionButton.addEventListener("click", (event) => {
+            event.preventDefault();
+
+            if(!name) return;
+
+            alert(`Olá ${name}!`);
+        });
+        
+        inputText.addEventListener('change', (event) => {
+            event.preventDefault();
+            name = event.target.value;
+        })
+    </script>
+</body>
+</html>

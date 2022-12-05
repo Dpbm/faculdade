@@ -1,0 +1,86 @@
+"0$7-fn6g!Bk#O$+)Qf0v": {
+    "opcode": "event_whenflagclicked",
+    "next": "T$+-~@,,Oi5y-s,/4T_,",
+    "parent": null,
+    "inputs": {},
+    "fields": {},
+    "shadow": false,
+    "topLevel": true,
+    "x": 251,
+    "y": -247
+}
+
+"T$+-~@,,Oi5y-s,/4T_,": {
+    "opcode": "data_setvariableto",
+    "next": "95z.zbP+K/t.!Cz1y^.y",
+    "parent": "0$7-fn6g!Bk#O$+)Qf0v",
+    "inputs": {
+        "VALUE": [1, [10, "1"]]
+    },
+    "fields": {
+        "VARIABLE": ["counter", "`jEk@4|i[#Fk?(8x)AV.-my variable"]
+    },
+    "shadow": false,
+    "topLevel": false
+}
+
+
+"95z.zbP+K/t.!Cz1y^.y": {
+    "opcode": "control_repeat",
+    "next": null,
+    "parent": "T$+-~@,,Oi5y-s,/4T_,",
+    "inputs": {
+        "TIMES": [1, [6, "10"]],
+        "SUBSTACK": [2, "*j7,,z$m1g}RXam|.lNo"]
+    },
+    "fields": {},
+    "shadow": false,
+    "topLevel": false
+},
+
+
+
+
+"*j7,,z$m1g}RXam|.lNo": {
+    "opcode": "looks_say",
+    "next": "wP|f4=SgN2lPzZcXdSUX",
+    "parent": "95z.zbP+K/t.!Cz1y^.y",
+    "inputs": {
+        "MESSAGE": [3, "FYDiij[mOZq|}WJu6~bW", [10, "Hello!"]]
+    },
+    "fields": {},
+    "shadow": false,
+    "topLevel": false
+},
+
+
+"FYDiij[mOZq|}WJu6~bW": {
+    "opcode": "operator_join",
+    "next": null,
+    "parent": "*j7,,z$m1g}RXam|.lNo",
+    "inputs": {
+        "STRING1": [1, [10, "hello "]],
+        "STRING2": [3, [12, "counter", "`jEk@4|i[#Fk?(8x)AV.-my variable"],
+            [10, "banana"]
+             ]
+        },
+                "fields": {},
+                "shadow": false,
+                "topLevel": false
+            },
+
+
+
+"wP|f4=SgN2lPzZcXdSUX": {
+                "opcode": "data_changevariableby",
+                "next": null,
+                "parent": "*j7,,z$m1g}RXam|.lNo",
+                "inputs": {
+                    "VALUE": [1, [4, "1"]]
+                },
+                "fields": {
+                    "VARIABLE": ["counter", "`jEk@4|i[#Fk?(8x)AV.-my variable"]
+                },
+                "shadow": false,
+                "topLevel": false
+            }
