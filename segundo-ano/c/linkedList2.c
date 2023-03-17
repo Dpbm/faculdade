@@ -19,12 +19,13 @@ Node* generate_node(int value);
 void insert_sorted(LinkedList **list, int value);
 bool is_an_empty_list(LinkedList *list);
 void insert_first_value(LinkedList **list, Node *node);
+void insert_sorted(LinkedList **list, int value);
 
 int main(){
   LinkedList *list;
   initialize_list(&list);
 
-  append(&list, 10);
+  /*append(&list, 10);
   append(&list, 11);
   append(&list, 12);
   append(&list, 13);
@@ -41,9 +42,18 @@ int main(){
   insert_before_value(&list, 20, 1);
   insert_before_value(&list, 16, 1);
   insert_before_value(&list, 12, 1);
+  */
+  insert_sorted(&list, 3);
+  insert_sorted(&list, 5);
+  insert_sorted(&list, 4);
+  insert_sorted(&list, 3);
+  insert_sorted(&list, 4);
+  insert_sorted(&list, 0);
+  insert_sorted(&list, -10);
+  insert_sorted(&list, -1);
+  insert_sorted(&list, 1);
 
   show_list(list);
-
   return 0;
 }
 
@@ -124,4 +134,25 @@ void insert_before_value(LinkedList **list, int target, int newNodeValue){
   actualNode->next = newNode;
 }
 
+void insert_sorted(LinkedList **list, int value){
+  Node* newNode = generate_node(value);
+ 
+  Node* actualNode = *list;
+
+  if(is_an_empty_list(actualNode)){
+    insert_first_value(list, newNode);
+    return;
+  }
+
+  if(value <= actualNode->value){
+    insert_before_value(list, actualNode->value, value);
+    return;
+  }
+  
+  while(actualNode->next != NULL && actualNode->next->value < value)
+    actualNode = actualNode->next;
+
+  newNode->next = actualNode->next;
+  actualNode->next = newNode;  
+}
 
