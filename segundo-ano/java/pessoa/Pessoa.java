@@ -1,32 +1,42 @@
 package pessoa;
 
-public class Pessoa{
-  private int idade;
-  private String nome, fone;
+import java.util.Scanner;
 
-  public Pessoa(String nome, String fone, int idade){
-    this.nome = nome;
-    this.fone = fone;
-    this.idade = idade;
-  }
+public class Pessoa {
+    private String nome, telefone;
+    private int idade;
 
-  public void fazAniversario(){
-    idade++;
-  }
+    private Scanner console = new Scanner(System.in);
 
-  public void atualizaFone(String fone){
-    this.fone = fone;
-  }
+    public Pessoa(String n, String t, int i ){
+        this.nome = n;
+        this.telefone = t;
+        this.idade = i;
+    }
 
-  public int getIdade(){
-    return idade;
-  }
+    public Pessoa(String n){
+        this.nome = n;
+    }
 
-  public String getNome(){
-    return nome;
-  }
+    public String getNome(){
+        return this.nome;
+    }
 
-  public String getFone(){
-    return fone;
-  }
+    public String getTelefone(){
+        return this.telefone;
+    }
+
+    public int getIdade(){
+        return this.idade;
+    }
+
+    public void setTelefone(String t){
+        this.telefone = t;
+    }
+
+    public void setIdade(int i){
+        this.idade = i;
+    }
+
+
 }
