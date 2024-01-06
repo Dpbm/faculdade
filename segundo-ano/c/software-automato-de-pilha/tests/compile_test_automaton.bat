@@ -1,0 +1,1 @@
+gcc ../stack.c ../automaton.c test_automaton.c

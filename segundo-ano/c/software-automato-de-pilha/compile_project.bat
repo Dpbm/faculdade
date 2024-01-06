@@ -1,0 +1,1 @@
+gcc stack.c main.c automaton.c

@@ -1,0 +1,1 @@
+gcc ../stack.c test_stack.c
