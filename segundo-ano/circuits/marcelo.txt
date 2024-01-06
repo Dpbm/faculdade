@@ -1,0 +1,2 @@
+numero de endereços = total de bancos * numero de entradas de cada
+
