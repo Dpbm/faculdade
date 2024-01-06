@@ -280,3 +280,5 @@ cabal.project.local~
 
 main
 segundo-ano/haskell/matrix/main
+*.Rhistory
+*_exiftool_tmp
