@@ -1,0 +1,13 @@
+graph{
+  beautify=true
+  layout="sfdp"
+
+  A [color=green]
+  B [color=red]
+  C [color=blue]
+  D [color=purple]
+
+  A -- C
+  B -- D 
+  C -- B
+}
