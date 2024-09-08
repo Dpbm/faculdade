@@ -1,0 +1,6 @@
+digraph{
+    beautify=true
+    layout="sfdp"
+
+    A -> A 
+  }

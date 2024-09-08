@@ -1,0 +1,6 @@
+graph{
+    beautify=true
+    layout="sfdp"
+
+    A -- A
+  }

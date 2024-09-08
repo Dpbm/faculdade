@@ -1,0 +1,8 @@
+digraph{
+    beautify=true
+    layout="sfdp"
+
+    A -> B
+    A -> C
+    C -> B
+  }
