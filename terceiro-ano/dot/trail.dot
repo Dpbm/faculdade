@@ -1,0 +1,9 @@
+graph{
+   beautify=true
+   layout="fdp"
+
+   C -- M
+   M -- L
+   L -- C
+   C -- F
+  }

@@ -1,0 +1,9 @@
+graph{
+   beautify=true
+   layout="circo"
+
+   C -- M
+   M -- L
+   L -- F
+   F -- C
+}
