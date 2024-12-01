@@ -1,0 +1,28 @@
+graph{
+    layout="sfdp"
+    beautify=true
+    A -- B
+    B -- C
+    C -- D
+    D -- A
+
+    D -- M
+    C -- H
+    M -- H
+
+    M -- O
+    H -- P
+    O -- P
+
+    O -- N
+    P -- L
+    N -- L
+
+    L -- F
+    N -- E
+    E -- F
+
+    E -- A
+    F -- B
+    
+}

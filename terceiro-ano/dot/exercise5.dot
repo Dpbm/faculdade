@@ -1,0 +1,18 @@
+graph{
+    layout="fdp"
+    beautify=true
+    A -- E
+    E -- G
+    G -- C
+    C -- A
+
+    B -- F
+    F -- H
+    H -- D
+    D -- B
+
+    A -- B
+    E -- F
+    G -- H
+    C -- D
+}

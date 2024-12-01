@@ -1,0 +1,50 @@
+graph{
+    layout="neato"
+    beautify=true
+    
+
+    A -- B
+    B -- C
+    C -- D
+    D -- A
+
+    E -- F
+    F -- J
+    J -- K
+    K -- E
+
+    I -- G
+    G -- H
+    H -- M
+    M -- I
+
+    N -- L
+    L -- P
+    P -- O
+    O -- N
+
+    A -- E
+    A -- I
+
+    B -- F
+    B -- G
+
+    C -- J
+    C -- H
+
+    D -- K
+    D -- M
+
+    N -- E
+    N -- I
+
+    O -- K
+    O -- M
+
+    P -- J
+    P -- H
+
+    L -- F
+    L -- G
+    
+}

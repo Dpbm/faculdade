@@ -1,0 +1,14 @@
+digraph{
+    Terra [color=blue]
+
+    Terra -> Mercurio
+    Plutao -> Venus
+    Terra -> Plutao
+    Plutao -> Mercurio
+    Mercurio -> Venus
+    Urano -> Netuno
+    Netuno -> Saturno
+    Satuno -> Jupiter
+    Jupiter -> Marte
+    Marte -> Urano
+}
