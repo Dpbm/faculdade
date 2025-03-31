@@ -1,0 +1,101 @@
+Para o nosso algoritmo de Criptografia Simétrica usamos um teclado de celulares antigos (T9) em conjunto com uma chave numérica.
+
+O funcionamento do algoritmo se dá da seguinte maneira:
+
+1. Primeiramente a mensagem de entrada é convertida para a sequência de números que deveriam ser apertados nesse tipo de teclado.
+
+[imgem]
+
+Por exemplo: ola = [666, 555, 2]
+
+2. Após converter a mensagem, cada número da chave deve ser somado com o resultado respectivo na cadeia. 
+
+	Exemplo:
+		chave = 123
+		resultado da aplicação da chave = [667, 557, 5]
+	
+Nesse algoritmo, aplicamos a chave recursivamente a cada caractere, sendo assim n(k) <= n(m), sendo n uma função para calcular o tamanho de uma string, k sendo a chave e m a mensagem. Ou seja, a chave pode ter no máximo o tamanho da mensagem de entrada.
+
+	Exemplo:
+		k = 1234
+		m = bom dia (caracteres especiais como espaço são ignorados)
+		
+		convertido para T9 = [22, 666, 6, 3, 444, 2]
+		criptografando = [(22+1), (666+2) , (6+3), (3+4), (444+1), (2+2)] = [23, 668, 9, 7, 445, 4]
+
+3. Após a transmissão da mensagem criptografada, para descriptografar poderiamos fazer o caminho inverso:
+
+Recebemos a mensagem e conhecemos a chave. Com isso, podemos subtrair a cada valor da chave com seu respectivo na sequencia recebida, ou seja:
+
+	 k = 1234
+	 mc = [23, 668, 9, 7, 445, 4]
+	 
+	 convertido = [(23-1), (668-2), (9-3), (7-4), (445-1), (4-2)] = [22, 666, 6, 3, 444, 2]
+	 
+Em seguida aplicamos a sequência no teclado T9.
+
+	[22, 666, 6, 3, 444, 2] -> bomdia
+
+Recuperando assim a mensagem original.
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Pensando de forma algoritmica, teriamos os seguintes pseudo códigos:
+
+CRIPTOGRAFAR(mensagem, chave)
+    mensagem ← converter_para_minusculas(mensagem)
+    lista_numeros ← lista_vazia()
+    tamanho_chave ← tamanho(chave)
+
+    PARA CADA index, letra EM mensagem FAÇA
+        SE letra ESTÁ no dicionário T9 ENTAO
+            numero_t9  ← dicionario_T9[letra]
+            numero_com_chave ← numero_t9 + chave[index%tamanho_chave]   
+            lista_numeros.append(numero_com_chave)
+        FIM SE
+    FIM PARA
+
+    
+    RETORNA lista_numeros
+FIM
+
+
+DESCRIPTOGRAFAR(mensagem, chave)
+    resultado ← ""
+    tamanho_chave ← tamanho(chave)
+
+    PARA CADA index, combinação EM mensagem FAÇA
+	numer_sem_chave ← combinação - chave[index%tamanho_chave]
+	letra  ← dicionario_T9_inverso[numero_sem_chave]
+	lista_resultado += letra #concatena a string
+    FIM PARA
+
+    RETORNAR resultado #retorna uma string
+FIM FUNÇÃO
+
+Para esses codigos, teriamos duas hashtables pré calculadas, da seguinte forma:
+
+dicionario_T9 ← {
+	a: 2,
+	b: 22,
+	c: 222,
+	d: 3,
+	e: 33,
+	...
+}
+
+e também:
+
+dicionario_T9_inverso ← {
+	2: a,
+	22: b,
+	222: c,
+	3: d,
+	33: e,
+	...
+}
+
+
+
+
