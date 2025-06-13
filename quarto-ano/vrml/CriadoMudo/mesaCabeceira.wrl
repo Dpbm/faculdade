@@ -1,0 +1,311 @@
+#VRML V2.0 utf8
+
+Group{
+  children[
+    Transform{
+      scale 4 4 4 # Escala geral
+      children[
+        #" Criado Mudo "
+        Group {
+          children [
+
+            # Tampo 
+            Transform {
+              translation 0 0.6 0
+              children [
+                Shape {
+                  appearance Appearance {
+                    texture ImageTexture {
+                      url "madeiraClara.jpeg"
+                    }
+                  }
+                  geometry Box {
+                    size 0.5 0.04 0.4
+                  }
+                }
+              ]
+            },
+
+            # Pernas da Mesa
+
+            # Perna 1: Frente Direita
+            Transform {
+              translation 0.22 0.29 0.17  
+              children [
+                Shape {
+                  appearance Appearance { 
+                    texture ImageTexture {
+                      url "madeiraClara.jpeg"
+                    } 
+                  }
+                  geometry Box { 
+                    size 0.04 0.58 0.04 
+                  }
+                }
+              ]
+            },
+
+            # Perna 2: Frente Esquerda
+            Transform {
+              translation -0.22 0.29 0.17
+              children [
+                Shape {
+                  appearance Appearance { 
+                    texture ImageTexture {
+                      url "madeiraClara.jpeg"
+                    }
+                  }
+                  geometry Box { 
+                    size 0.04 0.58 0.04 
+                  }
+                }
+              ]
+            },
+
+            # Perna 3: Trás Direita
+            Transform {
+              translation 0.22 0.29 -0.17
+              children [
+                Shape {
+                  appearance Appearance { 
+                    texture ImageTexture {
+                      url "madeiraClara.jpeg"
+                    }
+                  }
+                  geometry Box { 
+                    size 0.04 0.58 0.04 
+                  }
+                }
+              ]
+            },
+
+            # Perna 4: Trás Esquerda
+            Transform {
+              translation -0.22 0.29 -0.17
+              children [
+                Shape {
+                  appearance Appearance { 
+                    texture ImageTexture {
+                      url "madeiraClara.jpeg"
+                    }
+                  }
+                  geometry Box { 
+                    size 0.04 0.58 0.04 
+                  }
+                }
+              ]
+            },
+
+            # Gaveta de cima
+            Transform {
+              translation 0 0.48 0 
+              children [
+                Shape {
+                  appearance Appearance {
+                    texture ImageTexture {
+                      url "madeiraClara.jpeg"
+                    }
+                  }
+                  geometry Box {
+                    size 0.43 0.20 0.35 
+                  }
+                }
+              ]
+            },
+
+            # Puxador da Gaveta
+            Transform {
+              translation 0 0.48 0.185
+              children [
+                Shape {
+                  appearance Appearance {
+                    material Material {
+                      diffuseColor 0.4 0.4 0.4 
+                    }
+                  }
+                  geometry Box {
+                    size 0.1 0.02 0.02
+                  }
+                }
+              ]
+            },
+
+            # Gaveta de baixo
+            Transform {
+              translation 0 0.279 0 
+              children [
+                Shape {
+                  appearance Appearance {
+                    texture ImageTexture {
+                      url "madeiraClara.jpeg"
+                    }
+                  }
+                  geometry Box {
+                    size 0.43 0.20 0.35 
+                  }
+                }
+              ]
+            },
+
+            # Puxador da Gaveta
+            Transform {
+              translation 0 0.279 0.185
+              children [
+                Shape {
+                  appearance Appearance {
+                    material Material {
+                      diffuseColor 0.4 0.4 0.4
+                    }
+                  }
+                  geometry Box {
+                    size 0.1 0.02 0.02
+                  }
+                }
+              ]
+            }
+          ]
+        }
+
+        #" Abajur "
+        Group {
+          children [
+            Transform {
+              scale 0.8 0.8 0.8
+              translation 0.095 0.63 -0.06
+              children [
+                # Base do Abajur
+                Shape {
+                  appearance Appearance {
+                    material Material {
+                      diffuseColor 0.2 0.2 0.2 # Cinza escuro
+                    }
+                  }
+                  geometry Cylinder {
+                    height 0.05
+                    radius 0.08
+                  }
+                },
+
+                # Haste do Abajur 
+                Transform {
+                  translation 0 0.175 0 
+                  children [
+                    Shape {
+                      appearance Appearance {
+                        material Material {
+                          diffuseColor 0.3 0.3 0.3 # Cinza médio
+                        }
+                      }
+                      geometry Cylinder {
+                        height 0.3
+                        radius 0.01
+                      }
+                    }
+                  ]
+                },
+
+                # Cúpula do Abajur 
+                Transform {
+                  translation 0 0.35 0 
+                  children [
+                    Shape {
+                      appearance Appearance {
+                        material Material {
+                          diffuseColor 0.95 0.95 0.95 # Cinza claro
+                          transparency 0.3        # Translúcido
+                        }
+                      }
+                      geometry Cylinder {
+                        radius 0.15
+                        height 0.25
+                      }
+                    }
+                  ]
+                },
+                
+                #Lampada
+                Transform{
+                    translation 0 0.34 0
+                    children[
+                        Shape {
+                            appearance Appearance{
+                                material Material{
+                                    emissiveColor 1 1 0
+                                }
+                            }
+                            geometry Sphere {
+                                radius 0.04
+                            }
+                        }
+                    ]
+                }
+              ]
+            }
+          ]
+        }
+
+        #"Porta Retrato"
+        Group {
+          children [
+            Transform {
+              scale 0.67 0.67 0.67
+              translation -0.13 0.702 0.07
+              rotation 0 1 0 0.35
+              children [
+                # Moldura do Porta-Retrato
+                Shape {
+                  appearance Appearance {
+                    texture ImageTexture {
+                      url "Moldura_Retrato3.jpg" 
+                    }
+                  }
+                  geometry Box {
+                    size 0.2 0.25 0.015 
+                  }
+                },
+
+                # Base
+                Transform{
+                    translation 0 -0.04 -0.04
+                    rotation 3 0 0 0.45
+                    children [
+                        Shape {
+                            appearance Appearance {
+                                texture ImageTexture{
+                                    url "Moldura_Retrato3.jpg"
+                                }
+                            }
+                            geometry Box{
+                                size 0.04 0.17 0.015
+                            }
+                        }
+                    ]
+                }
+
+
+                # Foto
+                Transform {
+                  translation 0 0 0.011
+                  children [
+                    Shape {
+                      appearance Appearance {
+                        texture ImageTexture {
+                          url "Test.jpg"
+                        }
+                      }
+                      geometry Box { 
+                        size 0.17 0.22 0.001
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+
+      ]
+
+    }
+  ]
+}

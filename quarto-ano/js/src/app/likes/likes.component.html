@@ -1,0 +1,14 @@
+<div *ngIf="!overpower; then NotOverPower; else OverPower"></div>
+
+<ng-template #NotOverPower>
+  <div>
+    <p>likes {{ likes }}</p>
+    <button (click)="addLike()">like</button>
+  </div>
+</ng-template>
+
+<ng-template #OverPower>
+  <div>
+    <p>é mais de oito mil likes</p>
+  </div>
+</ng-template>
