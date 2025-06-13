@@ -1,0 +1,63 @@
+#VRML V2.0 utf8
+
+Shape{
+
+    appearance Appearance{
+
+        material Material{}
+        texture ImageTexture{
+            url ["ee.png"]
+        }
+    }
+
+    geometry Sphere{
+        radius 5
+    }
+
+}
+
+
+Transform{
+    translation -5 -2 -3
+    children[
+
+        Shape{
+            appearance Appearance{
+
+                material Material{}
+                texture ImageTexture{
+                    url ["joaquim.jpg"]
+                }
+            }
+
+            geometry Box{
+                size 10 10 10
+            }
+
+        }
+    ]
+}
+
+
+Transform{
+    translation 7 -2 -5
+    rotation 1 0 0 -0.2
+    children[
+
+        Shape{
+            appearance Appearance{
+
+                material Material{}
+                texture ImageTexture{
+                    url ["augustus-cesar.jpg"]
+                }
+            }
+
+            geometry Box{
+                size 10 10 10
+            }
+
+        }
+    ]
+}
+

@@ -1,0 +1,142 @@
+#VRML V2.0 utf8
+ 
+#Define a pleasing blue color for the bed and headboard
+DEF BedMaterial Appearance {
+  material Material {
+    diffuseColor 0.2 0.4 0.8  # A nice blue
+  }
+}
+ 
+#Define a white color for the pillow and sheets
+DEF ClothMaterial Appearance {
+  material Material {
+    diffuseColor 0.95 0.95 0.95 # Off-white
+  }
+}
+ 
+#Define a slightly darker white/grey for the pillow to differentiate
+DEF PillowMaterial Appearance {
+  material Material {
+    diffuseColor 0.85 0.85 0.85 # Light grey
+  }
+}
+ 
+Transform {
+  children [
+    # Bed Base
+    Transform {
+      translation 0 0.25 0 # Position the base slightly up
+      children [
+        Shape {
+          appearance USE BedMaterial
+          geometry Box {
+            size 2 0.5 4 # Width, Height, Length
+          }
+        }
+      ]
+    }
+ 
+    # Headboard
+    Transform {
+      translation 0 1.25 -1.9 # Positioned at the head of the bed
+      children [
+        Shape {
+          appearance USE BedMaterial
+          geometry Box {
+            size 2 1.5 0.2 # Width, Height, Thickness
+          }
+        }
+      ]
+    }
+ 
+    # Mattress (slightly smaller than the base)
+    Transform {
+      translation 0 0.65 0 # Position on top of the base
+      children [
+        Shape {
+          appearance USE ClothMaterial
+          geometry Box {
+            size 1.9 0.3 3.9 # Slightly smaller and thinner than the base
+          }
+        }
+      ]
+    }
+ 
+    # Pillow 1
+    Transform {
+      translation -0.5 0.9 -1.3 # Positioned on the mattress at the head
+      rotation 0 0 1 0.1 # Slight rotation for a more natural look
+      children [
+        Shape {
+          appearance USE PillowMaterial
+          geometry Box {
+            size 0.7 0.25 0.5 # Width, Height, Depth
+          }
+        }
+      ]
+    }
+ 
+    # Pillow 2
+    Transform {
+      translation 0.5 0.9 -1.3 # Positioned next to the first pillow
+      rotation 0 0 1 -0.08 # Slight different rotation
+      children [
+        Shape {
+          appearance USE PillowMaterial
+          geometry Box {
+            size 0.7 0.25 0.5 # Width, Height, Depth
+          }
+        }
+      ]
+    }
+ 
+    # Sheet (folded or draped look - simplified)
+    # This is a very basic representation of a sheet.
+    # A more realistic sheet would require IndexedFaceSet.
+    Transform {
+      translation 0 0.85 0.7 # Draped towards the foot of the bed
+      children [
+        Shape {
+          appearance USE ClothMaterial
+          geometry Box {
+            size 1.8 0.1 2.5 # Width, Thickness, Length
+          }
+        }
+      ]
+    }
+ 
+    # Optional: A slightly rumpled part of the sheet
+    Transform {
+      translation 0.2 0.82 0 # Near the pillows
+      rotation 0 1 0 0.3 # Slight rotation
+      children [
+        Shape {
+          appearance USE ClothMaterial
+          geometry Box {
+            size 1.0 0.15 0.8
+          }
+        }
+      ]
+    }
+  ]
+}
+ 
+# Lights to make the scene visible
+PointLight {
+  intensity 0.8
+  color 1 1 1
+  location 5 10 10
+}
+ 
+PointLight {
+  intensity 0.5
+  color 1 1 1
+  location -5 -5 5
+}
+ 
+# A simple viewpoint
+Viewpoint {
+  position 0 2 7
+  orientation 1 0 0 -0.2
+  description "Bed View"
+}

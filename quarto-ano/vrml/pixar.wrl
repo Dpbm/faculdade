@@ -1,0 +1,91 @@
+#VRML V2.0 utf8
+
+# base
+Transform{
+	translation 4.5 0.0 0.0
+	children[
+		Shape{
+			appearance Appearance{
+				material Material{
+					diffuseColor 0.5 0.5 0.5
+				}
+			}
+			geometry Cylinder{
+				radius 6.0
+			}
+		}
+	]
+}
+
+# bottom rod
+Transform{
+	translation 0.0 6 0.0
+	rotation 0 0 1 0.7
+	children[
+		Shape{
+			appearance Appearance{
+				material Material{
+					diffuseColor 0.5 0.5 0.5
+				}
+			}
+			geometry Cylinder{
+				radius 1.0
+				height 15.0
+			}
+		}
+	]
+}
+
+Transform{
+	translation -5 12 0.0
+	children[
+		Shape{
+			appearance Appearance{
+				material Material{
+					diffuseColor 0.5 0.5 0.5
+				}
+			}
+			geometry Sphere{
+				radius 1.0
+			}
+		}
+	]
+}
+
+
+Transform{
+	translation 0.0 18 0.0
+	rotation 0 0 1 -0.7
+	children[
+		Shape{
+			appearance Appearance{
+				material Material{
+					diffuseColor 0.5 0.5 0.5
+				}
+			}
+			geometry Cylinder{
+				radius 1.0
+				height 15.0
+			}
+		}
+	]
+}
+
+
+Transform{
+	translation 2.5 23 0.0
+	rotation 0 0 1 -2.2
+	children[
+		Shape{
+			appearance Appearance{
+				material Material{
+					diffuseColor 0.5 0.5 0.5
+				}
+			}
+			geometry Cylinder{
+				radius 2.0
+				height 5.0
+			}
+		}
+	]
+}

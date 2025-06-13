@@ -1,0 +1,20 @@
+(λx.x)(λx.x)y == y
+(λx.λy.x)g == y
+((λy.λy.y)g)g == g
+(((λy.(λx.λy.y))x)y)z == z
+
+
+
+
+
+
+
+
+
+
+# test in https://lambster.dev/
+#     and https://lambdacalc.io/
+
+# references:
+# https://learnxinyminutes.com/lambda-calculus
+# https://plato.stanford.edu/entries/lambda-calculus/

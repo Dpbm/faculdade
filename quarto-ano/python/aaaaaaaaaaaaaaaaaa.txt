@@ -1,0 +1,29 @@
+Qual é o propósito de definir uma interface comum para clientes no Padrão Factory?
+Permitir que objetos de diferentes classes sejam tratados de forma comum, promovendo polimorfismo.
+
+Qual a principal vantagem de usar o Padrão Factory comparado com a abordagem tradicional?
+Simplifica o código cliente e torna o sistema mais fácil de estender.
+
+Como o Padrão Factory ajuda na manutenção do código?
+Isolando a lógica de criação em uma única parte do código, facilitando o gerenciamento.
+
+O que é necessário para criar um ClientePessoaJuridica usando ClienteFactory?
+Tipo de cliente, nome e CNPJ.
+
+No contexto do artigo, o que ClienteFactory faz?
+Encapsula a lógica de criação de objetos de cliente, baseando-se em parâmetros.
+
+Por que pass é usado na classe Cliente?
+Como placeholder em um método que será sobrescrito.
+
+Qual dos seguintes NÃO é um conceito utilizado no Padrão Factory?
+Recursividade
+
+O padrão Factory Method é um dos padrões de criação do GoF e tem como objetivo delegar a responsabilidade de criação de objetos para subclasses, promovendo a flexibilidade e a reutilização do código. No entanto, uma desvantagem desse padrão é:
+Aumento da dependência entre classes
+
+O que faz a classe ClientePessoaFisica no artigo?
+Armazena e exibe o nome e o CPF do cliente.
+
+O que o Padrão Factory permite na programação orientada a objetos?
+Criação de objetos sem especificar a classe exata do objeto.

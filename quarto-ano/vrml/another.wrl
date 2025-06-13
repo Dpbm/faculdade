@@ -1,0 +1,24 @@
+#VRML V2.0 utf8
+
+NavigationInfo { headlight TRUE }
+SpotLight{
+    ambientIntensity 1
+    attenuation 0 1 0
+    beamWidth 1.57
+    color 1 1 1
+    cutOffAngle 0.5
+    intensity 0.3
+    on TRUE
+    radius 10
+}
+
+            Shape{
+                appearance Appearance{
+                    material Material{
+                        diffuseColor 1 1 1
+                    }
+                }
+                geometry Sphere{
+                    radius 3
+                }
+            }

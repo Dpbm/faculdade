@@ -1,0 +1,54 @@
+OPENQASM 3.0;
+include "stdgates.inc";
+gate cu3(p0, p1, p2) _gate_q_0, _gate_q_1 {
+  u1(p1/2 + p2/2) _gate_q_0;
+  u1(-p1/2 + p2/2) _gate_q_1;
+  cx _gate_q_0, _gate_q_1;
+  u3(-p0/2, 0, -p1/2 - p2/2) _gate_q_1;
+  cx _gate_q_0, _gate_q_1;
+  u3(p0/2, p1, 0) _gate_q_1;
+}
+gate csdg _gate_q_0, _gate_q_1 {
+  p(-pi/4) _gate_q_0;
+  cx _gate_q_0, _gate_q_1;
+  p(pi/4) _gate_q_1;
+  cx _gate_q_0, _gate_q_1;
+  p(-pi/4) _gate_q_1;
+}
+gate sxdg _gate_q_0 {
+  s _gate_q_0;
+  h _gate_q_0;
+  s _gate_q_0;
+}
+gate xx_plus_yy(p0, p1) _gate_q_0, _gate_q_1 {
+  rz(p1) _gate_q_0;
+  rz(-pi/2) _gate_q_1;
+  sx _gate_q_1;
+  rz(pi/2) _gate_q_1;
+  s _gate_q_0;
+  cx _gate_q_1, _gate_q_0;
+  ry(-p0/2) _gate_q_1;
+  ry(-p0/2) _gate_q_0;
+  cx _gate_q_1, _gate_q_0;
+  sdg _gate_q_0;
+  rz(-pi/2) _gate_q_1;
+  sxdg _gate_q_1;
+  rz(pi/2) _gate_q_1;
+  rz(-p1) _gate_q_0;
+}
+bit[5] meas;
+qubit[5] q;
+ccx q[1], q[2], q[3];
+p(1.7824144800377388) q[0];
+cu3(4.689231793072224, 4.0900237368540475, 2.074663729485221) q[4], q[3];
+sx q[1];
+cu3(6.223585047000021, 4.625981114754817, 0.9708532449594027) q[2], q[0];
+csdg q[0], q[1];
+xx_plus_yy(2.3868693879055627, 1.3668948338798583) q[2], q[4];
+id q[3];
+barrier q[0], q[1], q[2], q[3], q[4];
+meas[0] = measure q[0];
+meas[1] = measure q[1];
+meas[2] = measure q[2];
+meas[3] = measure q[3];
+meas[4] = measure q[4];

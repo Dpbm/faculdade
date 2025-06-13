@@ -1,0 +1,1 @@
+Set-Alias -Name pip -Value C:\Python312\Scripts\pip.exe

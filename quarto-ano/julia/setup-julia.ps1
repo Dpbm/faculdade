@@ -1,0 +1,1 @@
+Set-Alias -Name julia C:\Users\Lab\Desktop\julia-1.11.3\bin\julia.exe

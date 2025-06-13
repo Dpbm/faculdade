@@ -1,0 +1,156 @@
+#VRML V2.0 utf8
+
+NavigationInfo { headlight TRUE }
+
+Group{
+    children[
+        DEF Sensor SphereSensor{  }
+
+        Transform{
+            children[
+
+                DEF boxRotate Transform{
+                    translation 0 0 0
+                    children Shape{
+                        appearance Appearance{
+                            material Material{
+                                diffuseColor 1 0 0
+                            }
+                        }
+                        geometry Box{}
+                    }
+                }
+                
+                Transform{
+                    translation 3 0 0
+                    children Anchor{
+                        children Shape{
+                            appearance Appearance{
+                                material Material{
+                                    diffuseColor 0 1 0
+                                }
+                            }
+                            geometry Box{}
+                        }
+                        url "https://youtu.be/dQw4w9WgXcQ"
+                    }
+                }
+                
+                Transform{
+                    translation -3 0 0
+                    children[
+                        SpotLight{
+                            #location -3 0 3
+                            direction 1 1 -1
+                            location -3 0 4
+                            ambientIntensity 1
+                            beamWidth 1.57
+                            color 1 0 1
+                            cutOffAngle 0.5
+                            intensity 0.7
+                            on TRUE
+                            radius 10
+                        }
+                        Shape{
+                            appearance Appearance{
+                                material Material{
+                                    diffuseColor 1 1 1
+                                }
+                            }
+                            geometry Box{}
+                        }
+                    ]
+                }
+            ]
+        }
+        
+        
+        Transform{
+
+            translation 0 -3 0
+            children[
+
+                Transform{
+                    translation 0 0 0
+                    children Shape{
+                        appearance Appearance{
+                            material Material{
+                                diffuseColor 1 0 0
+                            }
+                        }
+                        geometry Box{}
+                    }
+                }
+                
+                Transform{
+                    translation 3 0 0
+                    children Shape{
+                        appearance Appearance{
+                            material Material{
+                                diffuseColor 0 1 0
+                            }
+                        }
+                        geometry Box{}
+                    }
+                }
+                
+                Transform{
+                    translation -3 0 0
+                    children Shape{
+                        appearance Appearance{
+                            material Material{
+                                diffuseColor 0 0 1
+                            }
+                        }
+                        geometry Box{}
+                    }
+                }
+            ]
+        }
+        
+        Transform{
+
+            translation 0 3 0
+            children[
+
+                Transform{
+                    translation 0 0 0
+                    children Shape{
+                        appearance Appearance{
+                            material Material{
+                                diffuseColor 1 0 0
+                            }
+                        }
+                        geometry Box{}
+                    }
+                }
+                
+                Transform{
+                    translation 3 0 0
+                    children Shape{
+                        appearance Appearance{
+                            material Material{
+                                diffuseColor 0 1 0
+                            }
+                        }
+                        geometry Box{}
+                    }
+                }
+                
+                Transform{
+                    translation -3 0 0
+                    children Shape{
+                        appearance Appearance{
+                            material Material{
+                                diffuseColor 0 0 1
+                            }
+                        }
+                        geometry Box{}
+                    }
+                }
+            ]
+        }
+    ]
+}
+
+ROUTE Sensor.rotation_changed TO boxRotate.rotation

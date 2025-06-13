@@ -1,0 +1,318 @@
+#VRML V2.0 utf8
+
+# chao
+Transform{
+	children[
+		Shape{
+			appearance Appearance{
+				material Material{
+					diffuseColor 0.9 0.9 0.9
+				}
+			}
+			geometry Box{
+				size 45 1 60
+			}
+		}
+	]
+}
+
+# casa
+Transform{
+	translation 0 15.4 0
+	children[
+		Shape{
+			appearance Appearance{
+				material Material{
+					diffuseColor 0.75 0.75 0.75
+				}
+			}
+			geometry Box{
+				size 45 30 40
+			}
+		}
+	]
+}
+
+# teto
+Transform{
+	translation 0 30 0
+	children[
+		Shape{
+			appearance Appearance{
+				material Material{
+					diffuseColor 0.75 0.75 0.75
+				}
+			}
+			geometry Box{
+				size 46 12 40
+			}
+		}
+	]
+}
+
+
+# frente do teto
+Transform{
+	translation 0 30 21
+	children[
+		Shape{
+			appearance Appearance{
+				material Material{
+					diffuseColor 0 0 1
+				}
+			}
+			geometry Box{
+				size 46 12 2
+			}
+		}
+	]
+}
+
+# frente azul da casa
+Transform{
+	translation -12.5 13 20.5
+	children[
+		Shape{	
+			appearance Appearance{
+				material Material{
+					diffuseColor 0 0 1 
+				
+				}
+			}
+			geometry Box{
+				size 20 25 1
+			}
+		}
+	]
+}
+
+
+# porta
+Transform{
+	translation 2.5 9.5 20
+	children[
+		Shape{	
+			appearance Appearance{
+				material Material{
+					diffuseColor 0 0 0
+		
+				}
+			}
+			geometry Box{
+				size 9 19 1
+			}
+		}
+	]
+}
+
+# macaneta
+Transform{
+	translation 5.5 9.5 20.5
+	children[
+		Shape{	
+			appearance Appearance{
+				material Material{
+					diffuseColor 0.5 0.5 0.5
+		
+				}
+			}
+			geometry Box{
+				size 0.2 8 0.2
+			}
+		}
+	]
+}
+# janela
+Transform{
+	translation 15 14.5 20
+	children[
+		Shape{	
+			appearance Appearance{
+				material Material{
+					diffuseColor 0 0 0
+		
+				}
+			}
+			geometry Box{
+				size 12 8 1
+			}	
+		}
+	]
+}
+
+# risco de baixo
+Transform{
+	translation -21 12.5 21
+	children[
+		Shape{	
+			geometry Box{
+				size 0.2 25 0.3
+			}	
+		}
+	]
+}
+
+
+# risco de cima
+Transform{
+	translation -20.7 30 22
+	children[
+		Shape{	
+			geometry Box{
+				size 0.2 12 0.3
+			}	
+		}
+	]
+}
+
+
+# vaso
+Transform{
+	translation -10 3.5 24
+
+	children[
+		Shape{	
+			appearance Appearance{
+				material Material{
+					diffuseColor 0.75 0.75 0.75
+				}
+			}
+			geometry Cylinder{
+				height 6
+				radius 2
+			}	
+		}
+	]
+}
+
+# tronco
+Transform{
+	translation -10 8 24
+
+	children[
+		Shape{
+			appearance Appearance{
+				material Material{
+					diffuseColor 0.58 0.3 0
+				}
+			}
+			geometry Cylinder{
+				height 3
+				radius 0.4
+			}	
+		}
+	]
+}
+
+# copa
+Transform{
+	translation -10 10 24
+
+	children[
+		Shape{
+			appearance Appearance{
+				material Material{
+					diffuseColor 0 1 0
+				}
+			}
+			geometry Cone{
+				height 4
+				bottomRadius 2.5
+			}	
+		}
+	]
+}
+
+# copacima
+Transform{
+	translation -10 14 24
+
+	children[
+		Shape{
+			appearance Appearance{
+				material Material{
+					diffuseColor 0 1 0
+				}
+			}
+			geometry Cone{
+				height 4
+				bottomRadius 2.5
+			}	
+		}
+	]
+}
+# vaso2
+Transform{
+	translation -15 3.5 24
+
+	children[
+		Shape{	
+			appearance Appearance{
+				material Material{
+					diffuseColor 0.75 0.75 0.75
+				}
+			}
+			geometry Cylinder{
+				height 6
+				radius 2
+			}	
+		}
+	]
+}
+
+# tronco2
+Transform{
+	translation -15 8 24
+
+	children[
+		Shape{
+			appearance Appearance{
+				material Material{
+					diffuseColor 0.58 0.3 0
+				}
+			}
+			geometry Cylinder{
+				height 3
+				radius 0.4
+			}	
+		}
+	]
+}
+
+# copa2
+Transform{
+	translation -15 10 24
+
+	children[
+		Shape{
+			appearance Appearance{
+				material Material{
+					diffuseColor 0 1 0
+				}
+			}
+			geometry Cone{
+				height 4
+				bottomRadius 2.5
+			}	
+		}
+	]
+}
+
+# copacima2
+Transform{
+	translation -15 14 24
+
+	children[
+		Shape{
+			appearance Appearance{
+				material Material{
+					diffuseColor 0 1 0
+				}
+			}
+			geometry Cone{
+				height 4
+				bottomRadius 2.5
+			}	
+		}
+	]
+}

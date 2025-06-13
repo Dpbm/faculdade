@@ -1,0 +1,29 @@
+URLS=['https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/aulas/1-s2.0-S0957417416000543-main.pdf', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/aulas/10.1007%40978-3-319-55453-2.pdf', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/aulas/Algoritmos%20Gen%E9ticos.pptx', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/aulas/Apresenta%E7%E3o1.pptx', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/aulas/ILS.ppt', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/aulas/PATH-RELINKING.pptx', 'https://www.inf.ufpr.br/aurora/disciplinas/topicos…2C%20ACIIDS%202016%2C%20Da%20Nang%2C%20Vietna.pdf', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/aulas/aco.ppt', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/aulas/aula1.pdf', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/aulas/aula2.pptx', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/aulas/aula3.pptx', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/aulas/aula4.pptx', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/aulas/aula5.pptx', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/aulas/aula6.pptx', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/aulas/aula8.ppt', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/aulas/lista.pdf', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/aulas/lista1.pdf', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/aulas/lista2.pdf', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/aulas/mobilityrecom.pdf', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/aulas/pso.pptx', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/aulas/trab.pptx', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/aulas09/BuscaTabu.ppt', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/aulas09/Construtivosxmelhora.ppt', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/aulas09/GLS.ppt', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/aulas09/Hyper-Heur%EDsticas.ppt', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/aulas09/ILS.pdf', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/aulas09/ILS.ppt', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/aulas09/MultiStart.ppt', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/aulas09/PSO%20mini%20tutorial.ppt', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/aulas09/busca.ppt', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/aulas09/buscaheuristica.ppt', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/aulas09/ce.ppt', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/aulas09/grasp.ppt', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/aulas09/swarm.ppt', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/problemas/BinPackingHyFlex.pdf', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/problemas/BoolenSatisfiabilityHyflex.pdf', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/problemas/PermutationFlowshopHyFlex.pdf', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/problemas/PersonnelSchedulingHyFlex.pdf', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/problemas/VRPHyflexLION12.pdf', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/problemas/binpacking.zip', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/problemas/flowshop.zip', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/problemas/personnelscheduling.zip', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/problemas/sat.zip', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/problemas/setCoveringProblem.zip', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/problemas/tsp.zip', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/problemas/vrp.zip', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/Algoritmos%20Geneticos.pptx', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/Apresenta.pptx', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/CE.pptx', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/ERBD.html', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/ES.pptx', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/Fleetwood.pptx', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/ILS.ppt', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/Ico-construtivas.ppt', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/Precis%E3o.pdf', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/aula2.pptx', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/bases.png', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/esp.pdf', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/grasp.ppt', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/pso.pptx', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/simulate.ppt', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/swarm.ppt', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/topicosia.html', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/topicosia2.htm', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/topicosia2.html', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/topicosia2old.htm', 'https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/ufpr.jpg']
+
+import requests as req
+import os
+from time import sleep
+
+FILE_PATH = "files"
+if not os.path.exists(FILE_PATH):
+    os.makedirs(FILE_PATH)
+os.chdir(FILE_PATH)
+
+for url in URLS:
+    parts = url.split("/")
+    filename = parts[-1]
+    i = -1
+    while not filename:
+        i -= 1
+        filename = parts[i]
+    print("Downloading: ", filename)
+
+    try:
+        res = req.get(url, stream=True)
+
+        with open(filename, "wb") as file:
+            file.write(res.content)
+    except Exception as error:
+        print("Failed: ", error) 
+
+    sleep(0.3)

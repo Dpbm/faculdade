@@ -1,0 +1,144 @@
+#VRML V2.0 utf8
+
+Group{
+    children[
+
+        Transform{
+            children[
+
+
+                Transform{
+                    children[
+
+                        Shape{
+                            appearance Appearance{
+                                material Material{}
+                                texture ImageTexture{
+                                    url["manta.jpg"]
+                                }
+                            }
+                            geometry Box{
+                                size 10 2 20
+                            }
+                        }
+
+                        Transform{
+                            translation 0 -2.5 0
+                            children Shape{
+                                appearance Appearance{
+                                    material Material{}
+                                    texture ImageTexture{
+                                        url["baixo.jpg"]
+                                    }
+                                }
+                                geometry Box{
+                                    size 10 3 20
+                                }
+                            }
+                        }
+
+                        #Pés
+
+                        Transform{
+                            translation 0 -4.5 0
+                            children[
+
+                                Transform{
+                                    translation 4.7 0 9.7
+                                    children[
+                                        Shape{
+                                            appearance Appearance{
+                                                material Material{
+                                                    diffuseColor  0.3 0.3 0.3
+                                                } 
+                                            }
+                                            geometry DEF Foot Cylinder{
+                                                radius 0.2
+                                                height 1.5
+                                            }
+                                        }
+                                    ]
+                                }
+                                
+                                Transform{
+                                    translation -4.7 0 9.7
+                                    children[
+                                        Shape{
+                                            appearance Appearance{
+                                                material Material{
+                                                    diffuseColor  0.3 0.3 0.3
+                                                } 
+                                            }
+                                            geometry USE Foot
+                                        }
+                                    ]
+                                }
+                                
+                                Transform{
+                                    translation -4.7 0 -9.7
+                                    children[
+                                        Shape{
+                                            appearance Appearance{
+                                                material Material{
+                                                    diffuseColor  0.3 0.3 0.3
+                                                } 
+                                            }
+                                            geometry USE Foot
+                                        }
+                                    ]
+                                }
+                                
+                                Transform{
+                                    translation 4.7 0 -9.7
+                                    children[
+                                        Shape{
+                                            appearance Appearance{
+                                                material Material{
+                                                    diffuseColor  0.3 0.3 0.3
+                                                } 
+                                            }
+                                            geometry USE Foot
+                                        }
+                                    ]
+                                }
+
+                            ]
+                        } 
+
+                    ]
+                }
+
+
+                Transform{
+                    #translation 0 -2.5 4
+                    translation 0 10 0
+                    children Shape{
+                        appearance Appearance{
+                            material Material{}
+
+                            texture ImageTexture{
+                                url ["manta.jpg"]
+                            }
+                        }
+
+                        geometry Extrusion{
+                            crossSection [
+                                -1 -1, 1 -1, 1 1, -1 1, -1 -1
+                            ]
+                            spine [
+                                0 0 0
+                            ]
+                            scale [
+
+                            ]
+                            solid FALSE
+                        }
+                    }
+                }
+
+
+            ]
+        }
+
+    ]
+}

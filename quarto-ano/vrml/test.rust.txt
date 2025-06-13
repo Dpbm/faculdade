@@ -1,0 +1,35 @@
+
+struct Node{
+    value: u32,
+    left: Option<Box<Node>>,
+    right: Option<Box<Node>>
+    
+}
+
+fn insert_into_tree(tree:&Node, value:u32){
+    if value <= tree.value{
+    
+        match tree.left{
+            Some(node) => insert_into_tree(Some(node.left), value),
+            None => tree.left = Node{ value:value, left:None, right:None }
+        }
+    }else{
+        match tree.right{
+            Some(node) => insert_into_tree(node.right, value),
+            None => tree.right = Node{ value:value, left:None, right:None }
+        }
+        
+    }
+}
+
+fn main() {
+    let root = Node{
+        value: 3,
+        left: None,
+        right: None
+    };
+    
+    insert_into_tree(&root, 4);
+    
+    
+}

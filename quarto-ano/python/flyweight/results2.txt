@@ -1,0 +1,28 @@
+Filename: /home/alexandre/Downloads/flyweight.py
+
+Line #    Mem usage    Increment  Occurrences   Line Contents
+=============================================================
+    87     44.9 MiB     44.9 MiB           1   @profile
+    88                                         def test_standard():
+    89     44.9 MiB      0.0 MiB           1       shapes = []
+    90    109.3 MiB      0.8 MiB      100001       for i in range(ITERATIONS):
+    91    109.3 MiB     13.9 MiB      100000           shapes.append(Circle("red",10))
+    92    109.3 MiB     16.4 MiB      100000           shapes.append(Square("red",10))
+    93    109.3 MiB     19.6 MiB      100000           shapes.append(Rectangle("red",10,10))
+    94    109.3 MiB     13.8 MiB      100000           shapes.append(Triangle("red",10,10))
+
+
+Filename: /home/alexandre/Downloads/flyweight.py
+
+Line #    Mem usage    Increment  Occurrences   Line Contents
+=============================================================
+    96     49.0 MiB     49.0 MiB           1   @profile
+    97                                         def test_flyweigth():
+    98     49.0 MiB      0.0 MiB           1       shapes = []
+    99    109.0 MiB      0.0 MiB      100001       for i in range(ITERATIONS):
+   100    109.0 MiB     14.1 MiB      100000           shapes.append(CircleFW("red",10))
+   101    109.0 MiB     13.1 MiB      100000           shapes.append(SquareFW("red",10))
+   102    109.0 MiB     16.9 MiB      100000           shapes.append(RectangleFW("red",10,10))
+   103    109.0 MiB     15.9 MiB      100000           shapes.append(TriangleFW("red",10,10))
+
+

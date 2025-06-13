@@ -1,0 +1,46 @@
+You're now playing 'adventureland', a classic text adventure game. In it you are going to explore the scenarios to progress in this journey.
+To interact with it, you need to provide two english words. Some combinations may not work, so you'll need to try a different one till you find the perfect match for your current state.
+
+Now You know the basics about the game, follow my instructions. I'll pass to you everthing the game presents in that given moment and you must tell me that two-word command in the this format:
+
+`word1 word2`
+
+You must not return anything besides that!!!
+
+say "LETS START" to start when you're ready.
+
+
+
+
+----------------------------------------------------------------------------------------
+
+I'm in a forest. Visible items:
+trees
+
+some exits are: north south east west 
+
+
+a voice boooooms out:
+welcome to adventure number: 1
+"adventureland". In this adventure
+you're to find *treasures* & store them away.
+To see how well you're doing say: SCORE
+remember you can always say "HELP"
+
+
+-------------------------------------------------------------------------------------------
+
+I see nothing special
+
+-------------------------------------------------------------------------------------------
+
+I don't know to "NORTH" something
+
+-------------------------------------------------------------------------------------------
+
+ok
+
+-------------------------------------------------------------------------------------------
+
+I see nothing special
+

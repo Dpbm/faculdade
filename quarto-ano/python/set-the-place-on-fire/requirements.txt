@@ -1,0 +1,10 @@
+pandas
+numpy
+qiskit
+qiskit-aer
+tqdm
+matplotlib
+pylatexenc
+qiskit-ibm-runtime
+qiskit_qasm3_import
+Pillow

@@ -1,0 +1,59 @@
+=====Testing Default implementation=====
+
+Line #    Mem usage    Increment  Occurrences   Line Contents
+=============================================================
+    97     45.0 MiB     45.0 MiB           1   @profile
+    98                                         def default_implementation():
+    99     45.0 MiB      0.0 MiB           1       print("=====Testing Default implementation=====")
+   100     45.0 MiB      0.0 MiB           1       forms = GeometricForms()
+   101                                         
+   102    110.0 MiB      0.0 MiB      100001       for _ in range(ITERATIONS):
+   103    110.0 MiB      0.0 MiB      300000           for form,color in zip((Circle, Square), ("red", "yellow")):
+   104    110.0 MiB     34.0 MiB      200000               forms.add_form(form(color, 10))
+   105                                                 
+   106    110.0 MiB      0.0 MiB      300000           for form,color in zip((Rectangle, Triangle), ("blue", "gray")):
+   107    110.0 MiB     31.0 MiB      200000               forms.add_form(form(color, 10, 10))
+
+
+=====Testing Flyweight implementation=====
+
+Line #    Mem usage    Increment  Occurrences   Line Contents
+=============================================================
+   118     50.7 MiB     50.7 MiB           1   @profile
+   119                                         def flyweight_version():
+   120     50.7 MiB      0.0 MiB           1       print("=====Testing Flyweight implementation=====")
+   121     50.7 MiB      0.0 MiB           1       forms = GeometricForms()
+   122                                         
+   123    109.1 MiB      0.0 MiB      100001       for _ in range(ITERATIONS):
+   124    109.1 MiB      0.0 MiB      300000           for form,color in zip((CircleFW, SquareFW), ("red", "yellow")):
+   125    109.1 MiB     33.5 MiB      200000               forms.add_form(form(color, 10))
+   126                                                 
+   127    109.1 MiB      0.0 MiB      300000           for form,color in zip((RectangleFW, TriangleFW), ("blue", "gray")):
+   128    109.1 MiB     24.9 MiB      200000               forms.add_form(form(color, 10, 10))
+
+
+=====Testing Default implementation (Only circles)=====
+
+Line #    Mem usage    Increment  Occurrences   Line Contents
+=============================================================
+   109     53.8 MiB     53.8 MiB           1   @profile
+   110                                         def default_implementation_only_circles():
+   111     53.8 MiB      0.0 MiB           1       print("=====Testing Default implementation (Only circles)=====")
+   112     53.8 MiB      0.0 MiB           1       forms = GeometricForms()
+   113     63.2 MiB      0.0 MiB      100001       for _ in range(ITERATIONS):
+   114     63.2 MiB      9.4 MiB      100000           forms.add_form(Circle("green", 10))
+
+
+=====Testing Flyweight implementation (Only Circles)=====
+
+Line #    Mem usage    Increment  Occurrences   Line Contents
+=============================================================
+   130     54.4 MiB     54.4 MiB           1   @profile
+   131                                         def flyweight_version_only_circles():
+   132     54.4 MiB      0.0 MiB           1       print("=====Testing Flyweight implementation (Only Circles)=====")
+   133     54.4 MiB      0.0 MiB           1       forms = GeometricForms()
+   134                                         
+   135     63.1 MiB      0.0 MiB      100001       for _ in range(ITERATIONS):
+   136     63.1 MiB      8.8 MiB      100000           forms.add_form(CircleFW("purple", 10))
+
+

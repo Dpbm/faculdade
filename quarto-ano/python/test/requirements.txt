@@ -1,0 +1,7 @@
+qiskit
+matplotlib
+pylatexenc
+jupyterlab
+qiskit-ibm-runtime
+qiskit-aer
+tqdm

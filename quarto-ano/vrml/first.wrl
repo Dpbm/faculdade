@@ -1,0 +1,34 @@
+#VRML V2.0 utf8
+Group{
+
+children[
+
+Transform{
+translation 1 0 0
+
+children Shape{
+geometry Box{ size 1.5 1.5 1.5 }
+appearance Appearance{
+	material Material {
+		diffuseColor 1 0 0
+	}
+}
+}
+}
+
+
+Shape {
+
+geometry Sphere { radius 1}
+
+
+appearance Appearance {
+
+material Material {diffuseColor 1 0 1}
+
+}
+
+}
+
+]
+}

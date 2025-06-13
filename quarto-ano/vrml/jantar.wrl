@@ -1,0 +1,293 @@
+#VRML V2.0 utf8
+
+Transform{
+    #rotation 3.6 4.8 -0.3 1
+    rotation 3.2 5.6 1 1
+    translation 0 -4 -30
+
+    children[
+
+        # mesa
+        Transform{
+            children[
+
+                Shape{
+                    appearance Appearance{
+                        material Material{
+                            diffuseColor 0.3 0.3 0.3
+                        }
+                    }
+
+                    geometry Cylinder{
+                        height 6
+                        radius 0.5
+                    }
+                }
+
+                Transform{
+                    translation 0 -3 0 
+                    children Shape{
+                        appearance Appearance{
+                            material Material{
+                                diffuseColor 0.3 0.4 0.1
+                            }
+                        }
+                        geometry Cylinder{
+                            height 0.7
+                            radius 1
+                        }
+                    }
+                }
+                
+                Transform{
+                    translation 0 3 0 
+                    children Shape{
+                        appearance Appearance{
+                            material Material{
+                                diffuseColor 0.3 0.4 0.1
+                            }
+                        }
+                        geometry Cylinder{
+                            height 0.7
+                            radius 5
+                        }
+                    }
+                }
+
+
+
+            ]
+        }
+
+
+        Transform{
+            translation -9 0 0 
+            children[
+
+                Shape{
+                    appearance Appearance{
+                        material Material{
+                            diffuseColor 1 0 0
+                        }
+                    }
+                    geometry Box{
+                        size 4 0.3 4
+                    }
+                }
+
+
+                # pé
+                Transform{
+                    translation -1.76 1 -1.76
+                    children Shape{
+
+                        appearance Appearance{
+                            material Material{
+                                diffuseColor 0.3 0.3 0.4
+                            }
+                        }
+
+                        geometry DEF PeTras Box{
+                            size 0.5 10 0.5
+                        }
+                    }
+                }
+                
+                Transform{
+                    translation 1.76 -2.1 -1.76
+                    children Shape{
+                        appearance Appearance{
+                            material Material{
+                                diffuseColor 0.3 0.3 0.4
+                            }
+                        }
+                        geometry DEF PeFrente Box{
+                            size 0.5 4 0.5
+                        }
+                    }
+                }
+                
+                Transform{
+                    translation 1.76 -2.1 1.76
+                    children Shape{
+                        appearance Appearance{
+                            material Material{
+                                diffuseColor 0.3 0.3 0.4
+                            }
+                        }
+                        geometry USE PeFrente
+                    }
+                }
+
+                # atras 
+                Transform{
+                    translation -1.76 1 1.76
+                    children Shape{
+                        appearance Appearance{
+                            material Material{
+                                diffuseColor 0.3 0.3 0.4
+                            }
+                        }
+                        geometry USE PeTras
+                    }
+                }
+
+                Transform{
+                    translation -1.76 1.5 0
+                    children Shape{
+                        appearance Appearance{
+                            material Material{
+                                diffuseColor 0.3 0.3 0.4
+                            }
+                        }
+                        geometry DEF CadeiraAtras Box{
+                            size 0.5 0.5 4
+                        }
+                    }
+                }
+
+                Transform{
+                    translation -1.76 3 0
+                    children Shape{
+                        appearance Appearance{
+                            material Material{
+                                diffuseColor 0.3 0.3 0.4
+                            }
+                        }
+                        geometry USE CadeiraAtras
+                    }
+                }
+
+
+                Transform{
+                    translation -1.76 4.5 0
+                    children Shape{
+                        appearance Appearance{
+                            material Material{
+                                diffuseColor 0.3 0.3 0.4
+                            }
+                        }
+                        geometry USE CadeiraAtras
+                    }
+                }
+
+            ]
+        }
+
+        Transform{
+            translation 9 0 0 
+            rotation 0 1 0 3.14
+            children[
+
+                Shape{
+                    appearance Appearance{
+                        material Material{
+                            diffuseColor 1 0 0
+                        }
+                    }
+                    geometry Box{
+                        size 4 0.3 4
+                    }
+                }
+
+
+                # pé
+                Transform{
+                    translation -1.76 1 -1.76
+                    children Shape{
+
+                        appearance Appearance{
+                            material Material{
+                                diffuseColor 0.3 0.3 0.4
+                            }
+                        }
+
+                        geometry DEF PeTras Box{
+                            size 0.5 10 0.5
+                        }
+                    }
+                }
+                
+                Transform{
+                    translation 1.76 -2.1 -1.76
+                    children Shape{
+                        appearance Appearance{
+                            material Material{
+                                diffuseColor 0.3 0.3 0.4
+                            }
+                        }
+                        geometry DEF PeFrente Box{
+                            size 0.5 4 0.5
+                        }
+                    }
+                }
+                
+                Transform{
+                    translation 1.76 -2.1 1.76
+                    children Shape{
+                        appearance Appearance{
+                            material Material{
+                                diffuseColor 0.3 0.3 0.4
+                            }
+                        }
+                        geometry USE PeFrente
+                    }
+                }
+
+                # atras 
+                Transform{
+                    translation -1.76 1 1.76
+                    children Shape{
+                        appearance Appearance{
+                            material Material{
+                                diffuseColor 0.3 0.3 0.4
+                            }
+                        }
+                        geometry USE PeTras
+                    }
+                }
+
+                Transform{
+                    translation -1.76 1.5 0
+                    children Shape{
+                        appearance Appearance{
+                            material Material{
+                                diffuseColor 0.3 0.3 0.4
+                            }
+                        }
+                        geometry DEF CadeiraAtras Box{
+                            size 0.5 0.5 4
+                        }
+                    }
+                }
+
+                Transform{
+                    translation -1.76 3 0
+                    children Shape{
+                        appearance Appearance{
+                            material Material{
+                                diffuseColor 0.3 0.3 0.4
+                            }
+                        }
+                        geometry USE CadeiraAtras
+                    }
+                }
+
+
+                Transform{
+                    translation -1.76 4.5 0
+                    children Shape{
+                        appearance Appearance{
+                            material Material{
+                                diffuseColor 0.3 0.3 0.4
+                            }
+                        }
+                        geometry USE CadeiraAtras
+                    }
+                }
+
+            ]
+        }
+
+    ]
+}

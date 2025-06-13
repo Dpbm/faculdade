@@ -1,0 +1,22 @@
+#VRML V2.0 utf8
+Viewpoint {
+	  #position 0 0 10 # visao aerea
+	  position 0 0 1 # visao pessoa
+ }
+
+Shape { 
+	appearance Appearance { 
+		material Material { 
+			diffuseColor 1 1 1 
+		}
+	}
+	geometry Extrusion {
+		crossSection [ -5 -4, -5 4, 4 4, 4 -4, -5 -4] #largura paredes
+		spine [0 -1.7 0 , 0 1.7 0 ] #altura paredes
+		orientation [0 1 0 0] 
+		scale [1 1, 1 1, 1 1]
+		solid FALSE
+		beginCap TRUE #chao
+		endCap FALSE #teto
+	}
+}

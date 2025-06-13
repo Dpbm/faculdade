@@ -1,0 +1,6 @@
+https://www.mathworks.com/help/gads/what-is-simulated-annealing.html
+https://sites.icmc.usp.br/sandra/G9_t2/annealing.htm
+http://www.decom.ufop.br/marcone/Disciplinas/InteligenciaComputacional/SimulatedAnnealing.pdf	
+https://www.inf.ufpr.br/aurora/disciplinas/topicosia2/downloads/trabalhos/SimulatedAnnealingTSP.pdf
+https://sites.gatech.edu/omscs7641/2024/02/19/simulated-annealing-methods-and-real-world-applications/
+	https://ime.unicamp.br/sites/default/files/pesquisa/relatorios/rp-2006-29.pdf

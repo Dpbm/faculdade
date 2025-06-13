@@ -1,0 +1,14 @@
+OPENQASM 3.0;
+include "stdgates.inc";
+bit[5] meas;
+qubit[5] q;
+s q[0];
+y q[4];
+cu(4.274516927816551, 1.6879047387504758, 2.885835750050026, 4.851744782161281) q[1], q[3];
+p(0.5782030527176935) q[2];
+barrier q[0], q[1], q[2], q[3], q[4];
+meas[0] = measure q[0];
+meas[1] = measure q[1];
+meas[2] = measure q[2];
+meas[3] = measure q[3];
+meas[4] = measure q[4];

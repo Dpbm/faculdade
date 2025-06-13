@@ -1,0 +1,59 @@
+#VRML V2.0 utf8
+Group{
+	children[
+
+		
+		Shape{
+			appearance Appearance{
+				material Material{ diffuseColor 1 0 0 }
+			}
+			 geometry IndexedFaceSet {
+			    coord Coordinate {
+			      point [
+				1 0 1,   # Base corner 1 (x, y, z)
+				1 0 -1,  # Base corner 2
+				-1 0 -1, # Base corner 3
+				-1 0 1,  # Base corner 4
+				0 2 0    # Apex point (top of the pyramid)
+			      ]
+			    }
+			    coordIndex [
+			      0, 1, 4, -1,  # Triangle 1 (base corner 1, base corner 2, apex)
+			      1, 2, 4, -1,  # Triangle 2 (base corner 2, base corner 3, apex)
+			      2, 3, 4, -1,  # Triangle 3 (base corner 3, base corner 4, apex)
+			      3, 0, 4, -1,  # Triangle 4 (base corner 4, base corner 1, apex)
+			      0, 1, 2, 3, -1  # Base (square)
+			    ]
+			  }
+		}
+
+		Transform{
+			translation 0 -0.5 0
+
+
+			children Shape{
+				appearance Appearance{
+					material Material{ diffuseColor 0 0 1 }
+				}
+
+				geometry Box{ size 1.5 1.5 1.5 } 
+			}
+		}
+			
+
+		Transform{
+			translation -0.7 3 0
+
+			children Shape{
+				appearance Appearance{
+					material Material{ diffuseColor 1 0 1 }
+				}
+
+				geometry Text{ 
+					string ["uma", "casa"]
+				}
+			}
+		}
+				
+	]
+}

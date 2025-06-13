@@ -1,0 +1,138 @@
+#VRML V2.0 utf8
+
+Group{
+    children[
+
+        Shape{
+            appearance Appearance{
+                material Material{
+                    diffuseColor 0.3 0.3 0.3 
+                }
+            }
+            geometry Sphere{
+                radius 1
+            }
+        }
+        
+        Shape{
+            geometry Box{
+                size 1.4 1.4 1.4
+            }
+        }
+
+        Shape{
+            geometry Cylinder{
+                height 0.1
+                radius 2
+            }
+        }
+
+
+        # UP
+        Group{
+            children[
+                Transform{
+                    children[
+
+                        Transform{
+                            translation 0 1 0 
+                            children[
+                                Shape{
+                                    geometry Cylinder{
+                                        height 0.8
+                                        radius 0.6
+                                    }
+                                }
+                            ]
+                        }
+
+                        Transform{
+                            translation 0 1 0
+                            children[
+                                Shape{
+                                    geometry Cylinder{
+                                        height 2
+                                        radius 0.4
+                                    }
+                                }
+                            ]
+                        }
+
+                        Transform{
+                            translation 0 3 0
+                            children[
+                                Shape{
+                                    geometry Cylinder{
+                                        height 3
+                                        radius 0.1
+                                    }
+                                }
+                            ]
+                        } 
+                    ]
+                }
+            ]
+        }
+        
+        # BOTTOM 
+        Group{
+            children[
+                Transform{
+                    rotation 1 0 0 3.14
+                    children[
+
+                        Transform{
+                            translation 0 1 0 
+                            children[
+                                Shape{
+                                    geometry Cylinder{
+                                        height 0.8
+                                        radius 0.6
+                                    }
+                                }
+                            ]
+                        }
+
+                        Transform{
+                            translation 0 1 0
+                            children[
+                                Shape{
+                                    geometry Cylinder{
+                                        height 2
+                                        radius 0.4
+                                    }
+                                }
+                            ]
+                        }
+
+                        Transform{
+                            translation 0 3 0
+                            children[
+                                Shape{
+                                    geometry Cylinder{
+                                        height 3
+                                        radius 0.1
+                                    }
+                                }
+                            ]
+                        } 
+                    ]
+                }
+            ]
+        }
+
+
+    ]
+
+}
+
+Background{
+    frontUrl "pauzao.jpg"
+    #backUrl "eis.jpg"
+    #topUrl "anime.jpg"
+    #bottomUrl "besouro.jpg"
+    #leftUrl "jaja.jpg"
+    #rightUrl "mqdefault.jpg"
+    skyColor 0.3 1 1
+    groundColor 1 0.3 1
+}

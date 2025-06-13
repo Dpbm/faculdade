@@ -1,0 +1,8 @@
+from guerreiro import Guerreiro
+
+if __name__ == "__main__":
+    g = Guerreiro("ROberto", 10, 10, 10)
+    g2 = Guerreiro("ROberto", 10, 10, 10)
+
+    g.atacar(g2)
+

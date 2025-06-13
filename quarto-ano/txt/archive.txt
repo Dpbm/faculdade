@@ -1,0 +1,14 @@
+https://web.archive.org/web/20250401221127/https://www.ibm.com/quantum/blog/utility-toward-useful-quantum
+https://web.archive.org/web/20250401221050/https://www.ibm.com/quantum/blog/quantum-error-suppression-mitigation-correction
+https://web.archive.org/web/20250401221416/https://www.ibm.com/quantum/blog/nature-qldpc-error-correction
+https://web.archive.org/web/20250401221243/https://www.ibm.com/quantum/blog/qldpc-codes
+https://web.archive.org/web/20250401221312/https://www.ibm.com/quantum/blog/hadron-dynamics-simulations
+https://web.archive.org/web/20250401221526/https://arxiv.org/abs/2404.02280
+https://web.archive.org/web/20250401221640/https://engrxiv.org/index.php/engrxiv/preprint/view/1077
+https://web.archive.org/web/20250401221705/https://journals.aps.org/prxquantum/abstract/10.1103/PRXQuantum.2.040330
+https://web.archive.org/web/20250401221737/https://www.science.org/doi/full/10.1126/sciadv.aaw5686
+https://web.archive.org/web/20250401221822/https://arxiv.org/abs/2404.07034
+https://web.archive.org/web/20250401221909/https://journals.aps.org/prxquantum/abstract/10.1103/PRXQuantum.2.040326
+https://web.archive.org/web/20250401222038/https://pubs.aip.org/aip/jap/article/132/16/160902/2837574
+https://web.archive.org/web/20250401222143/https://github.com/qiskit-community/qgss-2024
+https://web.archive.org/web/20250401222044/https://learning.quantum.ibm.com/course/variational-algorithm-design/cost-functions

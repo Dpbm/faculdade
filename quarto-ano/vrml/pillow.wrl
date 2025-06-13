@@ -1,0 +1,32 @@
+#VRML V2.0 utf8
+
+Group {
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          diffuseColor 0.8 0.8 0.9 # Light grey/blue for a soft look
+          specularColor 0.1 0.1 0.1
+          shininess 0.05 # Low shininess for a non-glossy, soft feel
+        }
+      }
+      geometry Extrusion {
+        crossSection [
+          0.4 -0.8, 0.8 -0.4, 0.8 0.4, 0.4 0.8,
+          -0.4 0.8, -0.8 0.4, -0.8 -0.4, -0.4 -0.8,
+          0.4 -0.8 # Close the shape
+        ]
+        spine [
+          0.0 0.0 -0.5,
+          0.0 0.0 0.5
+        ]
+        scale [
+          1.0 1.0, # Start scale
+          0.9 0.9  # Slightly taper the ends to give a soft impression
+        ]
+        beginCap TRUE
+        endCap TRUE
+      }
+    }
+  ]
+}

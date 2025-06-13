@@ -1,0 +1,29 @@
+from random import randint
+from abc import ABC, abstractmethod
+
+
+class Personagem(ABC):
+    def __init__(self, nome, classe, vida, ataque_min, ataque_max):
+        self.nome = nome
+        self.classe = classe
+        self._vida = vida
+        self.ataque_min = ataque_min
+        self.ataque_max = ataque_max
+    
+    @abstractmethod
+    def atacar(self, outro_personagem):
+        pass
+
+    def esta_vivo(self):
+        return self.vida > 0 
+
+    @property
+    def vida(self):
+        return self._vida
+
+    @vida.setter
+    def vida(self, value):
+        if(value < 0):
+            self._vida = 0
+        else:
+            self._vida = value

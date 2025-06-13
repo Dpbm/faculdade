@@ -4,35 +4,37 @@ struct Node{
     right: Option<Box<Node>>
 }
 
-struct Queue<'a>{
-    values: Vec<&'a Node>,
+struct Queue{
+    elements: Vec<Box<Node>>
 }
 
-impl<'a> Queue<'a>{
-    fn push(&mut self, element:&'a Node){
-        let _ = &self.values.push(element);
+impl Queue{
+    fn insert(&mut self, node:Box<Node>){
+        &self.elements.push(node);
     }
+    
     fn pop(&mut self){
-        let _ = &self.values.remove(0);
+        &self.elements.pop();
     }
-    fn head(&self) -> &'a Node{
-        &self.values[0]
-    }        
-    fn is_empty(&self) -> bool{
-        self.values.is_empty()
+    
+    fn len(&mut self) -> usize{
+        (&self.elements).len()
     }
 }
 
-fn append_node(tree:&mut Node, new_node:Node){
-    if new_node.value <= tree.value{
-        match &mut tree.left{
-            Some(subtree) => append_node(subtree, new_node),
-            None => tree.left = Some(Box::new(new_node))
+
+impl Node{
+    fn left_is_none(&self) -> bool{
+        match &self.left{
+            Some(_) => false,
+            None => true
         }
-    }else{
-        match &mut tree.right{
-            Some(subtree) => append_node(subtree, new_node),
-            None => tree.right = Some(Box::new(new_node))
+    }
+    
+    fn right_is_none(&self) -> bool{
+        match &self.right{
+            Some(_) => false,
+            None => true
         }
     }
 }
@@ -40,65 +42,52 @@ fn append_node(tree:&mut Node, new_node:Node){
 fn create_node(value:u32) -> Node{
     Node{
         value: value,
-        left: None,
-        right:None
+        left:None,
+        right:None,
     }
 }
 
-fn create_heap(root:&Node) -> Vec<u32>{
-    let mut queue = Queue{ values: Vec::new() };
-    let mut values = Vec::new();
-
-    queue.push(root);
-
-    loop{
+fn append(tree: &mut Node, new_node: Box<Node>){
+    if new_node.value < tree.value {
         
-        let current_node = queue.head();
-        values.push(current_node.value);
-
-        match &current_node.left{
-            Some(node) => queue.push(node),
-            None => println!("No Left Node")
+        if tree.left_is_none() {
+            tree.left = Some(new_node);
+        }else{
+            match &mut tree.left{
+                Some(subtree) => append(subtree, new_node),
+                None => println!("FAILED") 
+            }
         }
-
-        match &current_node.right{
-            Some(node) => queue.push(node),
-            None => println!("No Right Node")
-        }
-
-        queue.pop();
-
-        if queue.is_empty(){
-            break
+        
+    }else{
+        if tree.right_is_none() {
+            tree.right = Some(new_node);
+        }else{
+            match &mut tree.right{
+                Some(subtree) => append(subtree, new_node),
+                None => println!("FAILED") 
+            }
         }
     }
-
-    values
 }
 
 
-fn main(){
+
+
+fn main() {
     let mut root = create_node(10);
-    let n1 = create_node(3);
-    let n2 = create_node(100);
-    let n3 = create_node(12);
-    let n4 = create_node(200);
-    let n5 = create_node(121);
-    let n6 = create_node(6);
-    let n7 = create_node(5);
-
-    append_node(&mut root, n1);
-    append_node(&mut root, n2);
-    append_node(&mut root, n3);
-    append_node(&mut root, n4);
-    append_node(&mut root, n5);
-    append_node(&mut root, n6);
-    append_node(&mut root, n7);
-
-    let heap = create_heap(&root);
-    println!("{:?}", heap);
-
-    //println!("{}", root.value);
-    //println!("{}", root.left.unwrap().value);
-    //println!("{}", root.right.unwrap().value);
+    let second_node = Box::new(create_node(3));
+    let third_node = Box::new(create_node(14));
+    let forth_node = Box::new(create_node(105));
+    
+    append(&mut root, second_node);
+    append(&mut root, third_node);
+    append(&mut root, forth_node);
+    
+    //let right_node = root.right.unwrap();
+    //println!("{}", root.clone().value);
+    //println!("root left {}",root.clone().left.unwrap().value);
+    //println!("root right {}",right_node.right.unwrap().value);
+    //println!("child of right node {}",riht_node.value);
+    
 }
