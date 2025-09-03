@@ -134,7 +134,7 @@ class Board:
 
 
 if __name__ == "__main__":
-    board = Board(15)
+    board = Board(4)
     board.init_board()
 
     iteration = 1

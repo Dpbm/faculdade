@@ -1,0 +1,27 @@
+<body>
+
+
+  <script type="module">
+
+    import QuantumCircuit, {simulate} from "https://cdn.jsdelivr.net/gh/Dpbm/MicroMoth/versions/JavaScript/micromoth.js";
+
+    let qc = new QuantumCircuit(2,2);
+    qc.h(0);
+    qc.cx(0,1);
+    qc = qc.measure_all();
+
+    console.log(qc.getData());
+    const counts = simulate(qc);
+
+    console.log(simulate(qc,1000,"statevector"));
+    console.log(counts);
+
+    const h1 = document.createElement("h1");
+    h1.innerText = JSON.stringify(counts);
+
+    document.body.appendChild(h1);
+
+
+  </script>
+
+</body>
