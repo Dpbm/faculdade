@@ -1,0 +1,52 @@
+%% Commandline%% weka.datagenerators.clusterers.SubspaceCluster -S 1 -a 1 -C "-A 1 -D 1,10 -N 1..50"%%% Prologue%%
+% Cluster: c0   Uniform Random
+% ----------------------------------------------
+% Attribute: 0 Range: 1.0 - 10.0
+%
+% Number of Instances:            1..50
+% Generated Number of Instances:  36
+%
+% ----------------------------------------------
+% Total Number of Instances: 36
+%                            in 1 Cluster(s)
+%%@relation 'weka.datagenerators.clusterers.SubspaceCluster-S_1_-a_1_-C_-A_1_-D_1,10_-N_1..50'
+
+@attribute X0 numeric
+
+@data
+4.690727
+2.869434
+3.994454
+9.709803
+1.055055
+9.673343
+9.458788
+9.524754
+9.433739
+4.574569
+4.127662
+3.646513
+5.558353
+2.043704
+7.934823
+6.939034
+2.410722
+4.403818
+2.257864
+7.254532
+8.24705
+1.045227
+5.708216
+7.69586
+2.278204
+5.335555
+5.900993
+6.193902
+2.844222
+6.610274
+2.662364
+1.09616
+2.44939
+2.602494
+5.863574
+9.764506

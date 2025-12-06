@@ -1,0 +1,8 @@
+,id,nome,sobrenome,peso,altura,idade,salario,renda,prestacao,comp_renda,prestacao_maior,salario_igual_renda,IMC,aumento_salario,nome_upper,sobrenome_upper,nome_completo,nome_completo_len,sobrenome_len,rstrip_sobrenome,lstrip_sobrenome,strip_sobrenome
+0,1,Edmar, caldas ,88.8,1.7,40,3001.99,3001.99,550.99,18.35,True,True,30.73,3302.189,EDMAR, CALDAS ,Edmar  caldas ,14,8, caldas,caldas ,caldas
+1,2,Pedro,CALDAS ,45.8,1.69,39,3110.1,3110.11,601.99,19.36,True,False,16.04,3421.11,PEDRO,CALDAS ,Pedro caldas ,13,7,CALDAS,CALDAS ,CALDAS
+2,3,Matheus, CALDAS,33.7,1.68,38,2800.01,2800.01,700.56,25.02,True,True,11.94,3080.0110000000004,MATHEUS, CALDAS,Matheus  caldas,15,7, CALDAS,CALDAS,CALDAS
+3,4,cicero,alexandre,72.1,1.67,37,4110.99,4110.99,450.99,10.97,True,True,25.85,4522.089,CICERO,ALEXANDRE,Cicero alexandre,16,9,alexandre,alexandre,alexandre
+4,5,joao,souza,75.9,1.66,36,3801.54,3801.54,380.21,10.0,True,True,27.54,4181.694,JOAO,SOUZA,Joao souza,10,5,souza,souza,souza
+5,6,MARIA,ferreira,45.8,3.05,35,2987.01,2987.01,10000.21,334.79,False,True,4.92,3285.7110000000007,MARIA,FERREIRA,Maria ferreira,14,8,ferreira,ferreira,ferreira
+6,7,VINICIUS,silva,50.9,2.1,34,1550.99,2550.0,2509.65,161.81,False,False,11.54,1706.0890000000002,VINICIUS,SILVA,Vinicius silva,14,5,silva,silva,silva

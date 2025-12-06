@@ -1,0 +1,13 @@
+body{
+    margin:0;
+    overflow: hidden;
+}
+
+#circuit{
+    height: 90vh;
+}
+
+#options{
+    height: 10vh;
+    border: 1px solid red;
+}

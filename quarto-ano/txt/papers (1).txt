@@ -1,0 +1,124 @@
+https://link.springer.com/article/10.1007/s42484-022-00065-1
+https://arxiv.org/pdf/2403.00885
+https://arxiv.org/pdf/2507.04111
+https://journals.aps.org/prxlife/abstract/10.1103/PRXLife.2.023006
+https://glojit.com/index.php/glojit/article/view/18
+https://www.researchsquare.com/article/rs-3876410/v1
+https://arxiv.org/pdf/2509.25904
+
+
+https://posgraduacao.ufms.br/portal/trabalho-arquivos/download/2985
+
+
+Here’s a list of computationally expensive tasks in **bioinformatics**, often requiring high-performance computing (HPC), large memory, or long runtimes due to the complexity or volume of data involved:
+
+-------------------
+
+### 🧬 **1. Genome Assembly (especially de novo assembly)**
+
+* **Why expensive**: Requires aligning and overlapping millions to billions of short/long DNA reads to reconstruct whole genomes without a reference.
+* **Tools**: SPAdes, Canu, Flye, HiCanu, Shasta.
+* **Bottlenecks**: Memory usage, graph construction, and traversal (e.g., de Bruijn graphs or overlap graphs).
+
+---
+
+### 🧪 **2. Whole Genome Sequencing (WGS) Variant Calling**
+
+* **Why expensive**: Processing large BAM/CRAM files, detecting SNPs, indels, and structural variants from raw reads.
+* **Tools**: GATK, DeepVariant, FreeBayes.
+* **Bottlenecks**: Read alignment, sorting, and variant calling stages require intensive CPU and I/O.
+
+---
+
+### 🧠 **3. Cryo-Electron Microscopy (Cryo-EM) Image Reconstruction**
+
+* **Why expensive**: Involves 3D reconstruction from thousands to millions of noisy 2D images.
+* **Tools**: RELION, cryoSPARC, EMAN2.
+* **Bottlenecks**: GPU usage, alignment of large datasets, 3D Fourier transforms.
+
+---
+
+### 🧬 **4. Pan-genome Analysis**
+
+* **Why expensive**: Comparing the genomes of many individuals/species to find conserved and variable regions.
+* **Tools**: PanTools, Roary, PGAP.
+* **Bottlenecks**: Multiple large-scale alignments and graph-based genome representation.
+
+---
+
+### 🧬 **5. Multiple Sequence Alignment (MSA) of Large Datasets**
+
+* **Why expensive**: Aligning hundreds or thousands of long sequences increases time and memory complexity.
+* **Tools**: MAFFT, Clustal Omega, MUSCLE.
+* **Bottlenecks**: Pairwise comparisons scale quadratically or worse.
+
+---
+
+### 🧬 **6. Phylogenetic Tree Construction (Large Datasets)**
+
+* **Why expensive**: Building accurate evolutionary trees from large aligned sequence datasets.
+* **Tools**: RAxML, IQ-TREE, FastTree.
+* **Bottlenecks**: Searching huge tree space (NP-hard), bootstrapping for accuracy.
+
+---
+
+### 🧠 **7. Deep Learning on Genomics or Imaging Data**
+
+* **Why expensive**: Training deep neural networks (e.g., CNNs for histopathology, RNNs/Transformers for sequence data).
+* **Tools**: TensorFlow, PyTorch, DeepVariant, AlphaFold.
+* **Bottlenecks**: GPU/TPU usage, large training datasets, model complexity.
+
+---
+
+### 🧬 **8. Protein Structure Prediction (e.g., with AlphaFold)**
+
+* **Why expensive**: Uses deep learning + massive feature extraction from sequence alignments (MSAs, PSSMs).
+* **Tools**: AlphaFold, RoseTTAFold.
+* **Bottlenecks**: MSA generation, feature extraction, and inference on large models.
+
+---
+
+### 🔬 **9. Metagenomic Analysis**
+
+* **Why expensive**: Sequencing and analyzing complex microbial communities (billions of reads).
+* **Tools**: MetaPhlAn, Kraken2, HUMAnN, MEGAHIT.
+* **Bottlenecks**: Taxonomic classification, assembly, binning.
+
+---
+
+### 💾 **10. RNA-Seq Analysis (Bulk and Single-cell)**
+
+* **Why expensive**:
+
+  * **Bulk**: Alignment, quantification, differential expression.
+  * **Single-cell**: Demultiplexing, normalization, clustering of high-dimensional data.
+* **Tools**: STAR, Salmon, Seurat, Scanpy.
+* **Bottlenecks**: Memory and CPU for alignment; GPU for dimensionality reduction in single-cell.
+
+---
+
+### 🧠 **11. Network Biology / Systems Biology Simulations**
+
+* **Why expensive**: Modeling gene regulatory networks or metabolic pathways across time and space.
+* **Tools**: CellDesigner, COPASI, BioNetGen.
+* **Bottlenecks**: ODE/PDE solving, combinatorial explosion of states.
+
+---
+
+### 🧠 **12. Molecular Dynamics (MD) Simulations**
+
+* **Why expensive**: Simulating atomic-level movements of proteins/DNA over time.
+* **Tools**: GROMACS, NAMD, AMBER.
+* **Bottlenecks**: Long time scales (microseconds to milliseconds), fine temporal resolution.
+
+---
+
+### 🧬 **13. Large-Scale Data Integration & Annotation (Omics Integration)**
+
+* **Why expensive**: Combining genomics, transcriptomics, proteomics, and metabolomics data.
+* **Tools**: Galaxy, Bioconductor, OmicsPipe.
+* **Bottlenecks**: Data harmonization, storage, heterogeneous formats.
+
+---
+
+Would you like to go deeper into any of these (e.g., example workflows, hardware requirements, or tool comparisons)?
