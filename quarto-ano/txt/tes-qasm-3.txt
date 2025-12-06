@@ -1,0 +1,13 @@
+OPENQASM 3.0;
+
+qubit q[3];
+bit c[3];
+
+gate ring q1,q2,q3 {
+    ry(1.9106332362490184) q1;
+
+}
+
+ring q[0], q[1], q[2];
+
+measure q -> c;

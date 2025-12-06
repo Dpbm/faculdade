@@ -1,0 +1,6 @@
+version 3.0
+
+qubit [1]q;
+
+H q[0];
+Rz(pi/2) q[0];
