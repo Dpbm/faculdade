@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+  <Tracking>
+    <ImageTarget name="venus" size="1.000000 1.396505" />
+    <ImageTarget name="urano" size="1.000000 1.396505" />
+    <ImageTarget name="terra" size="1.000000 1.396505" />
+    <ImageTarget name="sol" size="1.000000 1.396505" />
+    <ImageTarget name="saturno" size="1.000000 1.396505" />
+    <ImageTarget name="plutao" size="1.000000 1.396505" />
+    <ImageTarget name="netuno" size="1.000000 1.396505" />
+    <ImageTarget name="mercurio" size="1.000000 1.396505" />
+    <ImageTarget name="marte" size="1.000000 1.396505" />
+    <ImageTarget name="lua" size="1.000000 1.396505" />
+    <ImageTarget name="jupiter" size="1.000000 1.396505" />
+  </Tracking>
+</QCARConfig>
